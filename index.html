@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--@author Caoimhe O'Brien -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Caoimhe O'Brien Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="Assets/Logo.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="Assets/Logo.png" alt="Logo" id="logo-image">
+            </div>
+            <div id="PageTitle">
+                <h1>Caoimhe's Projects</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li id="projectsLink"><a href= "index.html" class="nav-link">My Projects</a></li>
+                    <li id="contactLink"><a href="contact.html" class="nav-link">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="optionFilterBar">
+            <button class ="filterButton" data-filter="all">All</button>
+            <button class ="filterButton" data-filter="website">Websites</button>
+            <button class ="filterButton" data-filter="animation">Animations</button>
+            <button class ="filterButton" data-filter="game">Games</button>
+            <button class ="filterButton" data-filter="misc">Misc.</button>
+    </div>
+
+<main>
+    <div id="projectsContainer">
+        <div class ="section" data-category="website">
+            <h1 data-category="website">Websites</h1>
+            <div id="websites">
+                <div class="project" data-category="website">
+                    <img class="thumbnail" src="Assets/Logo.png" alt="This Portfolio Thumbnail"> 
+                    <div class="TextDescription">
+                        <h2>This Portfolio</h2>
+                        <p>Here is some of the process of creating this website. 
+                        <br><br>Click the button below to find out more! </p>
+                        <button id ="readmoreButtonTP">Read more!</button>
+                    </div>
+                </div>
+                <div class="project" data-category="website">
+                    <img class="thumbnail" src="Assets/SageAcademy/SageAcademy1.png" alt="Old Portfolio Thumbnail">
+                    <div class="TextDescription">
+                        <h2>Sage Academy</h2>
+                        <p>Here is a portfolio website I made in college last year but I have since reworked it. 
+                        <br><br>Click the button below to find out more!</p>
+                        <button id ="readmoreButtonSgA">Read more!</button>
+                    </div>
+                </div>
+                <div class="project" data-category="website">
+                    <img class="thumbnail" src="Assets/OldPortfolio/OldPortfolio_Thumbnail.png" alt="Old Portfolio Thumbnail">
+                    <div class="TextDescription">
+                        <h2>Old Portfolio</h2>
+                        <p>Here is a portfolio website I made in college last year but I have since reworked it. 
+                        <br><br>Click the button below to find out more!</p>
+                        <button id ="readmoreButtonOP">Read more!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class ="section" data-category="animation">
+            <h1 data-category="animation">Animations</h1>
+            <div id="animations">
+                <div class="project" data-category="animation">
+                    <img class="thumbnail" src="Assets/EnemyAnimation/Enemy_Thumbnail.png" alt="Enemy Animations Thumbnail">
+                    <div class="TextDescription">
+                        <h2>Enemy Animations</h2>
+                        <p>This is a 2D animation I made in my second year of college for a Concept Art for Games module.
+                        <br><br>Click the button below to find out more!</p>
+                        <button id ="readmoreButtonEA">Read more!</button>
+                    </div>
+                </div>
+                <div class="project" data-category="animation">
+                    <!--Empty "project block" to keep the grid happy-->
+                </div>
+            </div>
+        </div>
+
+        <div class ="section" data-category="game">
+            <h1 data-category="game">Games</h1>
+            <div id="games">
+                <div class="project" data-category="game">
+                    <img class="thumbnail" src="Assets/Game/CoffeeUtopia_Thumbnail.png" alt="Coffee Utopia Game Thumbnail">
+                    <div class="TextDescription">
+                        <h2>"Coffee Utopia" Game</h2>
+                        <p>Here is a short coffee shop game I made using HTML and JavaScript.
+                        <br><br>Click the button below to find out more!</p>
+                        <button id ="readmoreButtonCU">Read more!</button>
+                    </div>
+                </div>
+
+                <div class="project" data-category="game">
+                    <!--Empty "project block" to keep the grid happy-->
+                </div>
+            </div>
+        </div>
+
+        <div class ="section" data-category="misc">
+            <h1>Miscellaneous</h1>
+            <div id="misc">
+                <div class="project" data-category="misc">
+                    <img class="thumbnail" src="Assets/GameAssetsroject/menu_screen.png" alt="Game Assets Thumbnail">
+                    <div class="TextDescription">
+                        <h2>Game Assets</h2>
+                        <p>Here are some game assets that I created for a group project in 2nd Year of College.
+                        <br><br>Click the button below to find out more!</p>
+                        <button id ="readmoreButtonGA">Read more!</button>
+                    </div>
+                </div>
+                <div class="project" data-category="misc">
+                    <img class="thumbnail" src="Assets/OptometryPoster.jpg" alt="Optometry Poster Thumbnail">
+                    <div class="TextDescription">
+                        <h2>Optometry Poster</h2>
+                        <p>Here is a poster that I assisted in creating in my personal time.
+                        <br><br>Click the button below to find out more!</p>
+                        <button id ="readmoreButtonOptPos">Read more!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div> <!-- End of projectsContainer -->
+</main>
+
+
+<!--Modals-->
+
+<!-- The Modal -->
+<div id="thisPortfolioModal" class="modal">
+    <span class="close">&times;</span>
+    <!-- Modal content -->
+    <div class="modalContent">
+        <h2>Behind This Project</h2>
+        
+        <img class="modalImage" src="Assets/Logo.png" alt="This Portfolio Thumbnail">
+        <div>
+            <p>I created my first portfolio in Semester 2 in Year 2 of my degree and I was still getting the "hang" of UI design and user-centered ideologies.
+            <br><br>Since then, I have learned a lot more about web design and development and I wanted to create a new portfolio that better reflects my skills and personality.
+            <br><br>This portfolio was created using HTML, CSS, and JavaScript.
+            <br><br>I started by sketching out a basic layout and design for the website, focusing on simplicity and ease of navigation. I used criticisms that I recieved on my previous portfolio to improve the user experience on my old portfolio in my time as a Summer intern at UNUM, as noted in the image below.
+            <br><br>I used Figma to create a more detailed design and layout for the website; including color schemes, typography, and imagery. I wanted to make sure that the website was visually appealing and easy to read. I also implemented variables and other design systems in my process. 
+            <br><br> Using my Low and Mid Fidelity designs, I created a prototype that I could test and refine. I made sure to get feedback from friends and family to ensure that the website was user-friendly and easy to navigate.  
+            <br><br>Once I had a solid design, I began coding the website using HTML, CSS, and JavaScript on Visual Studio Code. Originally, I had planned to repurpose my old site and just updated teh styles but it ended up being more work than I had anticipated so I decided to start from scratch. 
+            <br><br> I used grays and blues to give the website a professional and modern look. 
+            <br><br>Overall, I am very happy with how this portfolio turned out. It showcases my skills and personality in a way that I am proud of, and I believe it will help me stand out.
+            </p>
+        </div>
+        <img class="modalImage" src="Assets/Low/Home.png" alt="This Portfolio Figma Design">
+        <img class="modalImage" src="Assets/Low/Filtered_Websites.png" alt="This Portfolio Figma Design">
+        <img class="modalImage" src="Assets/Low/Filtered_WebsitesReadMore.png" alt="This Portfolio Figma Design">
+        <img id="modalImage_NotesonOld" src="Assets/OldPortfolio/Notes-and-Research_Portfolio.png" alt="This Portfolio Figma Design">
+        
+    </div>
+</div>
+
+<div id="SageAcademyModal" class="modal">
+    <span class="close">&times;</span>
+    <!-- Modal content -->
+    <div class="modalContent">
+        <h2>Behind This Project</h2>
+        
+        <img class="SgAImage" src="Assets/SageAcademy/SageAcademy1.png" alt="Sage Academy Thumbnail">
+        <div>
+            <p>Here is the link to the live page for this website: <a href="https://caoimheobrien.github.io/WebUIDesign_2025GroupProject/">Sage Academy Live link</a></p>
+            <p>Here is the link to the GitHub repo: <a href="https://github.com/CaoimheOBrien/WebUIDesign_2025GroupProject">GitHub Link</a></p>
+            <p>
+                This website was created as a group project for my Web UI Design module in Semester 2 of Year 2 of my degree.
+                <br><br>Our group was tasked with creating a website for a fictional educational institution called "Sage Academy". The website was to be designed to attract potential students and provide information about the courses and programs offered by the academy.
+                <br><br>As a group, we started by researching other educational websites to get an idea of what worked well and what didn't. We also brainstormed ideas for the layout and design of the website.
+                <br><br>Once we had a solid plan in place, we divided the work among the group members.
+                <br><br>I moved towards a leadership role in this project, as I had more experience with web design and development than some of the other group members. I took on the role of project manager, ensuring that everyone was on track and that the project was progressing smoothly.
+                <br><br>We used PenPot to create wireframes and prototypes for the website. This allowed us to visualize the layout and design of the website before we started coding.
+                <br><br>I was tasked with creating the sign-in, contact us, and quizzes pages for the website. I also created several components that were used throughout the site, such as buttons, cards and forms.
+                <br><br>We used a combination of HTML, CSS, and JavaScript to create the website. We also made sure to optimize the website for mobile devices, as we knew that many potential students would be accessing the site from their phones.
+                <br><br>Overall, I am very proud of the work that our group did on this project. The website turned out great, and Ilearned a lot about working through conflict resolution and collaboration in a team setting.
+            </p>
+            <img class="SgAImage" src="Assets/SageAcademy/SageAcademy2.png" alt="Sage Academy page">`
+            <img class="SgAImage" src="Assets/SageAcademy/SageAcademy3.png" alt="Sage Academy page">
+            <img class="SgAImage" src="Assets/SageAcademy/SageAcademy3.2.png" alt="Sage Academy page">
+            <img class="SgAImage" src="Assets/SageAcademy/SageAcademy3.3.png" alt="Sage Academy page">
+            <img class="SgAImage" src="Assets/SageAcademy/SageAcademy4.1.png" alt="Sage Academy page">
+            <img class="SgAImage" src="Assets/SageAcademy/SageAcademy4.2.png" alt="Sage Academy page">
+            <img class="SgAImage" src="Assets/SageAcademy/SageAcademy4.3.png" alt="Sage Academy page">
+
+        </div>
+        
+        
+    </div>
+</div>
+
+<div id="oldPortfolioModal" class="modal">
+    <span class="close">&times;</span>
+    <!-- Modal content -->
+    <div class="modalContent">
+        <h2>My Old Portfolio</h2>
+        
+        <img class="modalImageOP" src="Assets/OldPortfolio/OldPortfolio_Thumbnail.png" alt="This Portfolio Thumbnail">
+        <div>
+            <p>
+                Here is the link to the live page for this website: <a href="https://caoimheobrien.github.io/Portfolio_CaoimheOBrien_LiborsClass/">Old Portfolio Live link</a></p>
+            <p>Here is the link to the GitHub repository: <a href="https://github.com/CaoimheOBrien/Portfolio_CaoimheOBrien_LiborsClass">Repo for old portfolio</a></p>
+            <p> I created this portfolio website as part of my Web UI  a Design module in Semester 2 of Year 2 of my degree.
+            <br><br>The website was designed to showcase my skills and experience as a web designer and developer. I wanted to create a website that was visually appealing, easy to navigate, and provided a sense of who I was not only as a designer but also as a creative.
+            <br><br> I started out by looking at other portfolio websites for inspiration. I took note of the layouts, color schemes, and typography that I liked and used them to inform my own design. I liked the use of dark colours in a lot of the sites but when I implemented into my own site, I don't think it came across as well.
+            <br><br> I used PenPot to create wireframes and prototypes for the website. This allowed me to visualize the layout and design of the website before I started coding.
+            <br><br> I used a combination of HTML, CSS, and JavaScript to create the website. I made sure to optimize the website for mobile devices, as I knew that many potential employers would be accessing the site from their phones.
+            <br><br> When I first finnished this project I was very happy with its outcome but now I feel that it does not accurately represent my skills and personality as a designer. I have learned a lot since creating this website, so I created a new portfolio that better reflects who I am and what I can do under the guidance of my internship at UNUM.
+            </p>
+        </div>
+        <img class="modalImageOP" src="Assets/OldPortfolio/Portfolio_HOME_old.png" alt="My old portfolio home page">
+        <img class="modalImageOP" src="Assets/OldPortfolio/Portfolio_PROJECTS_old.png" alt="My old portfolio projects page">
+        <img class="modalImageOP" src="Assets/OldPortfolio/Portfolio_PROJECTS_ReadMoreToggled_old.jpeg" alt="My old portfolio projects page with read more toggled">
+        <img class="modalImageOP" src="Assets/OldPortfolio/Portfolio_ABOUT_old.png" alt="My old portfolio about me page">
+        <img class="modalImageOP" src="Assets/OldPortfolio/Portfolio_CONTACT_old.png" alt="My old portfolio contact me page">
+    </div>
+</div>
+
+<div id="enemiesAnimationModal" class="modal">
+    <span class="close">&times;</span>
+    <!-- Modal content -->
+    <div class="modalContent">
+        <h2>My Old Portfolio</h2>
+        
+        <img class="modalImageEA" src="Assets/EnemyAnimation/Enemy_Thumbnail.png" alt="Enemy Animation Thumbnail">
+        <div>
+            <p>
+                I created this 2D animation as part of a Concept Art for Games module in Semester 1 of Year 2 of my degree.
+            <br><br>The animation was created using a pixelated art style to give it a retro feel. I used a limited color palette to create a cohesive look and feel for the animation.
+            <br><br> I started by sketching out the basic design for the enemy character. I then created a series of frames for the animation using a software called Aesprite, focusing on the movement and actions of the character.
+            <br><br> I used a combination of traditional animation techniques and digital tools to create the animation. I made sure to pay attention to the timing and spacing of the animation to ensure that it was smooth and fluid, especially since it was going ot be used in a game.
+            <br><br> Overall, I am very happy with how this animation turned out. It showcases my skills as an animator and my ability to create engaging and visually appealing content.
+            </p>
+        </div>
+        <img class="modalImageEA" src="Assets/EnemyAnimation/Enemy_WalkCycle.gif" alt="Enemy Walk Cycle Animation">
+        <img class="modalImageEA" src="Assets/EnemyAnimation/Enemy_AttackCycle.gif" alt="Enemy Attack Cycle Animation">
+        <img class="modalImageEA" src="Assets/EnemyAnimation/enemy1_expire.gif" alt="Enemy Expire Animation">
+    </div>
+</div>
+
+<div id="coffeeUtopiaModal" class="modal">
+    <span class="close">&times;</span>
+    <!-- Modal content -->
+    <div class="modalContent">
+        <h2>My Old Portfolio</h2>
+        
+        <img class="modalImageCU" src="Assets/Game/coffeeUtopia_Thumbnail.png" alt="Enemy Animation Thumbnail">
+        <div>
+            <p>
+                I created this 2D game as part of a UI prototyping module in Semester 1 of Year 2 of my degree. Our prompt was to make a game based on the theme of "Utopia" and I felt that my perfect utopia was a nice cozy coffee shop.
+                <br><br>I first created all the assets for this game in Aesprite, using a pixelated art style to give it a retro feel. I used a limited color palette to create a cohesive look and feel for the game as I watned it to have a "cozy" vibe.
+                <br><br> I then used HTML, CSS, and JavaScript to create the game. This was the first time I had used the canvas function in HTML so it was really fun to explore this because it was like I was coding in C++ which I hadd done in my first year of university.
+                <br><br> I made sure to pay attention to the user experience and interface design to ensure that the game was intuitive; just in case a user got confused there is a list of instructions in the top left corner of the game screen. 
+                <br><br> Unlike my other projects, this was hosted on codeberg which is an alternative to GitHub, however I prefer GitHub as it is easier to launch pages and more widely used.
+                <br><br> Overall, I am very happy with how this game turned out. It showcases my skills as a game designer and my ability to create engaging and visually appealing content.
+            </p>
+        </div>
+        <img class="modalImageCU" src="Assets/Game/coffeeUtopia_Thumbnail.png" alt="Coffee Utopia Game Screenshot 1">
+    </div>
+</div>
+
+<div id="coffeeUtopiaModal" class="modal">
+    <span class="close">&times;</span>
+    <!-- Modal content -->
+    <div class="modalContent">
+        <h2>My Old Portfolio</h2>
+        
+        <img class="modalImageCU" src="Assets/Game/coffeeUtopia_Thumbnail.png" alt="Enemy Animation Thumbnail">
+        <div>
+            <p>
+                I created this 2D game as part of a UI prototyping module in Semester 1 of Year 2 of my degree. Our prompt was to make a game based on the theme of "Utopia" and I felt that my perfect utopia was a nice cozy coffee shop.
+                <br><br>I first created all the assets for this game in Aesprite, using a pixelated art style to give it a retro feel. I used a limited color palette to create a cohesive look and feel for the game as I watned it to have a "cozy" vibe.
+                <br><br> I then used HTML, CSS, and JavaScript to create the game. This was the first time I had used the canvas function in HTML so it was really fun to explore this because it was like I was coding in C++ which I hadd done in my first year of university.
+                <br><br> I made sure to pay attention to the user experience and interface design to ensure that the game was intuitive; just in case a user got confused there is a list of instructions in the top left corner of the game screen. 
+                <br><br> Unlike my other projects, this was hosted on codeberg which is an alternative to GitHub, however I prefer GitHub as it is easier to launch pages and more widely used.
+                <br><br> Overall, I am very happy with how this game turned out. It showcases my skills as a game designer and my ability to create engaging and visually appealing content.
+            </p>
+        </div>
+        <img class="modalImageCU" src="Assets/Game/coffeeUtopia_Thumbnail.png" alt="Coffee Utopia Game Screenshot 1">
+    </div>
+</div>
+
+
+<div id="gameAssetsModal" class="modal">
+    <span class="close">&times;</span>
+    <!-- Modal content -->
+    <div class="modalContent">
+        <h2>My Old Portfolio</h2>
+        
+        <img class="modalImageGA" src="Assets/GameAssetsroject/menu_screen.png" alt="Enemy Animation Thumbnail">
+        <div>
+            <p>
+                I created these game assets for a project last year in my degree. I used Aesprite to create these pixelated assets.
+                <br><br> I created a variety of assets including characters, enemies, and backgrounds. We also had to create 2 spalsh screens for the game so I chose the menu screen and the restart screen.
+                <br><br>I used a limited color palette to create a cohesive look and feel for the game. I wanted there to a be a contrast between the characters, enemies and the backgrounds so I used brighter colors for the characters and more muted colors for the backgrounds as well as having a completely different plaette for the enemies.
+                <br><br> I made sure to pay attention to the details of each asset, ensuring that they were visually appealing and fit within the overall aesthetic of the game. We were going to code this game but were unable ot complete due to time constraints and clashes without projects going on at the time.
+                <br><br> Overall, I am very happy with how these assets turned out.
+            </p>
+        </div>
+        <img class="modalImageGA" src="Assets/GameAssetsroject/restart_screen.png" alt="Game Screenshot 1">
+        <img class="modalImageGA" src="Assets/GameAssetsroject/bg1.png" alt="Game Screenshot background">
+        <img class="modalImageGA" src="Assets/GameAssetsroject/bg2.png" alt="Game Screenshot background">
+        <img class="modalImageGA" src="Assets/GameAssetsroject/enemy1.png" alt="Game Enemy 1">
+        <img class="modalImageGA" src="Assets/GameAssetsroject/enemy2.png" alt="Game Enemy 2">
+        <img class="modalImageGA" src="Assets/GameAssetsroject/hero.png" alt="Game Hero">
+    </div>
+</div>
+
+<div id="optometryPosterModal" class="modal">
+    <span class="close">&times;</span>
+    <!-- Modal content -->
+    <div class="modalContent">
+        <h2>My Old Portfolio</h2>
+        <div>
+            <p>
+                This is a poster that I worked on in my personal time. I worked with an optometrist to create a poster to highlight certain statistics about eye health that they had recently written a paper on. He wanted an aide for his presentation to the Eurpopean Union of Optometry.                <br><br> I used Adobe Photoshop to create the poster, focusing on a clean and professional design. I used a combination of images and text to create a visually appealing poster that would catch the attention of potential patients.
+                <br><br> I made sure to pay attention to the typography and layout of the poster to ensure that it was easy to read and understand.
+                <br><br> I used a color scheme that was consistent with the optometrist's branding, using blues and greens to create a calming and professional look as well as ensuring that it could be read by people with a variety of different levels of colour blindess. 
+                <br><br> Overall, I am very happy with how this poster turned out. It showcases my skills as a graphic designer and my ability to create engaging and visually appealing content.
+            </p>
+        </div>
+        <img class="modalImageOPPos" src="Assets/OptometryPoster.jpg" alt="Optometry Poster">
+        
+    </div>
+</div>
+
+</body>
+
+<footer>
+    <p>&copy; 2024 Caoimhe O'Brien</p>
+</footer>
+</html>
