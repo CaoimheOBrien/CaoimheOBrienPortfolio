@@ -30,79 +30,94 @@
 
     <div id="optionFilterBar">
             <button class ="filterButton" data-filter="all">All</button>
-            <button class ="filterButton" data-filter="website">Websites</button>
+            <button class ="filterButton" data-filter="conceptArt">Concept Art</button>
             <button class ="filterButton" data-filter="animation">Animations</button>
+            <button class ="filterButton" data-filter="website">Websites</button>
             <button class ="filterButton" data-filter="game">Games</button>
             <button class ="filterButton" data-filter="misc">Misc.</button>
     </div>
 
 <main>
     <div id="projectsContainer">
-        <div class ="section" data-category="website">
-            <h1 data-category="website">Websites</h1>
-            <div id="websites">
-                <div class="project" data-category="website">
-                    <img class="thumbnail" src="Assets/Caoimhe_lOGO_NoBG.png" alt="This Portfolio Thumbnail"> 
+        <div class ="section" data-category="conceptArt">
+            <h1 data-category="conceptArt">Concept Art</h1>
+            <div id="conceptArts">
+                <div class="project" data-category="conceptArt" data-modal = "stCuanModal">
+                    <img class="thumbnail" src="Assets/ConceptArt/St Cuan Thumbnail.png" alt="Enemy Animations Thumbnail">
                     <div class="TextDescription">
-                        <h2>This Portfolio</h2>
-                        <p>Here is some of the process of creating this website. 
-                        <br><br>Click the button below to find out more! </p>
-                        <button class="readMoreBtn" id ="readmoreButtonTP">Read more!</button>
+                        <h2>St Cuan for Dingle Animation</h2>
+                        <p>This is a character I made for a games sting for the 2026 Dingle Animation Festival.
+                        <br><br>Click to find out more!</p>
                     </div>
                 </div>
-                <div class="project" data-category="website">
-                    <img class="thumbnail" src="Assets/SageAcademy/SageAcademy1.png" alt="Old Portfolio Thumbnail">
+                <div class="project" data-category="conceptArt" data-modal = "cowModal">
+                    <img class="thumbnail" src="Assets/ConceptArt/CowThumbnail.png" alt="Enemy Animations Thumbnail">
                     <div class="TextDescription">
-                        <h2>Sage Academy</h2>
-                        <p>Here is a portfolio website I made in college last year but I have since reworked it. 
-                        <br><br>Click the button below to find out more!</p>
-                        <button class="readMoreBtn" id ="readmoreButtonSgA">Read more!</button>
-                    </div>
-                </div>
-                <div class="project" data-category="website">
-                    <img class="thumbnail" src="Assets/OldPortfolio/OldPortfolio_Thumbnail.png" alt="Old Portfolio Thumbnail">
-                    <div class="TextDescription">
-                        <h2>Old Portfolio</h2>
-                        <p>Here is a portfolio website I made in college last year but I have since reworked it. 
-                        <br><br>Click the button below to find out more!</p>
-                        <button class="readMoreBtn" id ="readmoreButtonOP">Read more!</button>
+                        <h2>Cow for Dingle Animation</h2>
+                        <p>This is a character I made for a games sting for the 2026 Dingle Animation Festival.
+                        <br><br>Click to find out more!</p>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class ="section" data-category="animation">
             <h1 data-category="animation">Animations</h1>
             <div id="animations">
-                <div class="project" data-category="animation">
-                    <img class="thumbnail" src="Assets/EnemyAnimation/Enemy_Thumbnail.png" alt="Enemy Animations Thumbnail">
+                <div class="project" data-category="animation" data-modal = "enemiesAnimationModal">
+                    <img class="thumbnail" src="Assets/EnemyAnimation/enemy1_idle.gif" alt="Enemy Animations Thumbnail">
                     <div class="TextDescription">
                         <h2>Enemy Animations</h2>
                         <p>This is a 2D animation I made in my second year of college for a Concept Art for Games module.
-                        <br><br>Click the button below to find out more!</p>
-                        <button class="readMoreBtn" id ="readmoreButtonEA">Read more!</button>
+                        <br><br>Click to find out more!</p>
                     </div>
                 </div>
-                <div class="project" data-category="animation">
+                <div class="empty" data-category="animation">
                     <!--Empty "project block" to keep the grid happy-->
                 </div>
             </div>
         </div>
-
+        <div class ="section" data-category="website" >
+            <h1 data-category="website">Websites</h1>
+            <div id="websites">
+                <div class="project" data-category="website" data-modal = "thisPortfolioModal">
+                    <img class="thumbnail" src="Assets/Caoimhe_lOGO_NoBG.png" alt="This Portfolio Thumbnail"> 
+                    <div class="TextDescription">
+                        <h2>This Portfolio</h2>
+                        <p>Here is some of the process of creating this website. 
+                        <br><br>Click to find out more! </p>
+                    </div>
+                </div>
+                <div class="project" data-category="website" data-modal = "SageAcademyModal">
+                    <img class="thumbnail" src="Assets/SageAcademy/SageAcademy1.png" alt="Old Portfolio Thumbnail">
+                    <div class="TextDescription">
+                        <h2>Sage Academy</h2>
+                        <p>Here is a portfolio website I made in college last year but I have since reworked it. 
+                        <br><br>Click to find out more!</p>
+                    </div>
+                </div>
+                <div class="project" data-category="website" data-modal = "oldPortfolioModal">
+                    <img class="thumbnail" src="Assets/OldPortfolio/OldPortfolio_Thumbnail.png" alt="Old Portfolio Thumbnail">
+                    <div class="TextDescription">
+                        <h2>Old Portfolio</h2>
+                        <p>Here is a portfolio website I made in college last year but I have since reworked it. 
+                        <br><br>Click to find out more!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class ="section" data-category="game">
             <h1 data-category="game">Games</h1>
             <div id="games">
-                <div class="project" data-category="game">
+                <div class="project" data-category="game" data-modal = "coffeeUtopiaModal">
                     <img class="thumbnail" src="Assets/Game/coffeeUtopia_Thumbnail.png" alt="Coffee Utopia Game Thumbnail">
                     <div class="TextDescription">
                         <h2>"Coffee Utopia" Game</h2>
                         <p>Here is a short coffee shop game I made using HTML and JavaScript.
-                        <br><br>Click the button below to find out more!</p>
-                        <button class="readMoreBtn" id ="readmoreButtonCU">Read more!</button>
+                        <br><br>Click to find out more!</p>
                     </div>
                 </div>
 
-                <div class="project" data-category="game">
+                <div class="empty" data-category="game">
                     <!--Empty "project block" to keep the grid happy-->
                 </div>
             </div>
@@ -111,22 +126,20 @@
         <div class ="section" data-category="misc">
             <h1>Miscellaneous</h1>
             <div id="misc">
-                <div class="project" data-category="misc">
+                <div class="project" data-category="misc" data-modal = "gameAssetsModal">
                     <img class="thumbnail" src="Assets/GameAssetsroject/menu_screen.png" alt="Game Assets Thumbnail">
                     <div class="TextDescription">
                         <h2>Game Assets</h2>
                         <p>Here are some game assets that I created for a group project in 2nd Year of College.
-                        <br><br>Click the button below to find out more!</p>
-                        <button class="readMoreBtn" id ="readmoreButtonGA">Read more!</button>
+                        <br><br>Click to find out more!</p>
                     </div>
                 </div>
-                <div class="project" data-category="misc">
+                <div class="project" data-category="misc" data-modal="optometryPosterModal">
                     <img class="thumbnail" src="Assets/OptometryPoster.jpg" alt="Optometry Poster Thumbnail">
                     <div class="TextDescription">
                         <h2>Optometry Poster</h2>
                         <p>Here is a poster that I assisted in creating in my personal time.
-                        <br><br>Click the button below to find out more!</p>
-                        <button class="readMoreBtn" id ="readmoreButtonOptPos">Read more!</button>
+                        <br><br>Click to find out more!</p>
                     </div>
                 </div>
             </div>
@@ -139,13 +152,45 @@
 <!--Modals-->
 
 <!-- The Modal -->
+<div id="stCuanModal" class="modal">
+    <span class="close">&times;</span>
+    <!-- Modal content -->
+    <div class="modalContent">
+        <h2>Behind This Project</h2>
+        
+        <img class="modalImage" src="Assets/ConceptArt/St Cuan Thumbnail.png" alt="St Cuan thumbnail">
+        <div>
+            <p>Concept art blah blah blah</p>
+        </div>
+        <img class="modalImage" src="Assets/ConceptArt/St Cuan Sketches.png" alt="Primary sketches">
+        <img class="modalImage" src="Assets/ConceptArt/CharacterTurnaround.png" alt="Final Character turnaround">
+        <img class="modalImage" src="Assets/ConceptArt/St Cuan's Staff.png" alt="Staff ideas">
+        <img class="modalImage" src="Assets/ConceptArt/StCuan_Forward.png" alt="Front View of St Cuan">
+        
+    </div>
+</div>
+<div id="cowModal" class="modal">
+    <span class="close">&times;</span>
+    <!-- Modal content -->
+    <div class="modalContent">
+        <h2>Behind This Project</h2>
+        
+        <img class="modalImage" src="Assets/ConceptArt/CowThumbnail.png" alt="Cow Thumbnail">
+        <div>
+            <p>Concept art blah blah blah</p>
+        </div>
+        <img class="modalImage" src="Assets/ConceptArt/Cow Sketches.png" alt="Primary sketches">
+        <img class="modalImage" src="Assets/ConceptArt/cow.png" alt="Front View of Cow">
+        
+    </div>
+</div>
 <div id="thisPortfolioModal" class="modal">
     <span class="close">&times;</span>
     <!-- Modal content -->
     <div class="modalContent">
         <h2>Behind This Project</h2>
         
-        <img class="modalImage" src="Assets/Logo.png" alt="This Portfolio Thumbnail">
+        <img class="modalImage" src="Assets/Logo.png" alt="St Cuan Thumbnail">
         <div>
             <p>Here is the link to my Figma Project: <a href="https://www.figma.com/files/team/1345354242551810868/project/396071516/Portfolio?fuid=1345354237697589270">Figma Link</a></p>
             <p>Here is the link to the GitHub repository: <a href="https://github.com/CaoimheOBrien/CaoimheOBrienPortfolio">GitHub Repo</a></p>
@@ -172,7 +217,7 @@
     <span class="close">&times;</span>
     <!-- Modal content -->
     <div class="modalContent">
-        <h2>Behind This Project</h2>
+        <h2>Sage Academy</h2>
         
         <img class="SgAImage" src="Assets/SageAcademy/SageAcademy1.png" alt="Sage Academy Thumbnail">
         <div>
@@ -222,10 +267,10 @@
             <br><br> When I first finnished this project I was very happy with its outcome but now I feel that it does not accurately represent my skills and personality as a designer. I have learned a lot since creating this website, so I created a new portfolio that better reflects who I am and what I can do under the guidance of my internship at UNUM.
             </p>
         </div>
+        <img class="modalImageOP" src="Assets/OldPortfolio/Notes-and-Research_Portfolio.png" alt="Notes and research on my old portfolio">
         <img class="modalImageOP" src="Assets/OldPortfolio/Portfolio_HOME_old.png" alt="My old portfolio home page">
         <img class="modalImageOP" src="Assets/OldPortfolio/Portfolio_PROJECTS_old.png" alt="My old portfolio projects page">
         <img class="modalImageOP" src="Assets/OldPortfolio/Portfolio_PROJECTS_ReadMoreToggled_old.jpeg" alt="My old portfolio projects page with read more toggled">
-        <img class="modalImageOP" src="Assets/OldPortfolio/Portfolio_ABOUT_old.png" alt="My old portfolio about me page">
         <img class="modalImageOP" src="Assets/OldPortfolio/Portfolio_CONTACT_old.png" alt="My old portfolio contact me page">
     </div>
 </div>
@@ -234,7 +279,7 @@
     <span class="close">&times;</span>
     <!-- Modal content -->
     <div class="modalContent">
-        <h2>My Old Portfolio</h2>
+        <h2>Enemy Animation</h2>
         
         <img class="modalImageEA" src="Assets/EnemyAnimation/Enemy_Thumbnail.png" alt="Enemy Animation Thumbnail">
         <div>
@@ -246,8 +291,9 @@
             <br><br> Overall, I am very happy with how this animation turned out. It showcases my skills as an animator and my ability to create engaging and visually appealing content.
             </p>
         </div>
-        <img class="modalImageEA" src="Assets/EnemyAnimation/Enemy_WalkCycle.gif" alt="Enemy Walk Cycle Animation">
-        <img class="modalImageEA" src="Assets/EnemyAnimation/Enemy_AttackCycle.gif" alt="Enemy Attack Cycle Animation">
+        <img class="modalImageEA" src="Assets/EnemyAnimation/Enemy_Thumbnail.png" alt="Character Turnaound">
+        <img class="modalImageEA" src="Assets/EnemyAnimation/enemy1_idle.gif" alt="Enemy Idle Animation">
+        <img class="modalImageEA" src="Assets/EnemyAnimation/enemy1_shooting.gif" alt="Enemy Attack Cycle Animation">
         <img class="modalImageEA" src="Assets/EnemyAnimation/enemy1_expire.gif" alt="Enemy Expire Animation">
     </div>
 </div>
@@ -256,7 +302,7 @@
     <span class="close">&times;</span>
     <!-- Modal content -->
     <div class="modalContent">
-        <h2>My Old Portfolio</h2>
+        <h2>CoffeeUtopia</h2>
         
         <img class="modalImageCU" src="Assets/Game/coffeeUtopia_Thumbnail.png" alt="Enemy Animation Thumbnail">
         <div>
@@ -273,33 +319,13 @@
     </div>
 </div>
 
-<div id="coffeeUtopiaModal" class="modal">
-    <span class="close">&times;</span>
-    <!-- Modal content -->
-    <div class="modalContent">
-        <h2>My Old Portfolio</h2>
-        
-        <img class="modalImageCU" src="Assets/Game/coffeeUtopia_Thumbnail.png" alt="Enemy Animation Thumbnail">
-        <div>
-            <p>
-                I created this 2D game as part of a UI prototyping module in Semester 1 of Year 2 of my degree. Our prompt was to make a game based on the theme of "Utopia" and I felt that my perfect utopia was a nice cozy coffee shop.
-                <br><br>I first created all the assets for this game in Aesprite, using a pixelated art style to give it a retro feel. I used a limited color palette to create a cohesive look and feel for the game as I watned it to have a "cozy" vibe.
-                <br><br> I then used HTML, CSS, and JavaScript to create the game. This was the first time I had used the canvas function in HTML so it was really fun to explore this because it was like I was coding in C++ which I hadd done in my first year of university.
-                <br><br> I made sure to pay attention to the user experience and interface design to ensure that the game was intuitive; just in case a user got confused there is a list of instructions in the top left corner of the game screen. 
-                <br><br> Unlike my other projects, this was hosted on codeberg which is an alternative to GitHub, however I prefer GitHub as it is easier to launch pages and more widely used.
-                <br><br> Overall, I am very happy with how this game turned out. It showcases my skills as a game designer and my ability to create engaging and visually appealing content.
-            </p>
-        </div>
-        <img class="modalImageCU" src="Assets/Game/coffeeUtopia_Thumbnail.png" alt="Coffee Utopia Game Screenshot 1">
-    </div>
-</div>
 
 
 <div id="gameAssetsModal" class="modal">
     <span class="close">&times;</span>
     <!-- Modal content -->
     <div class="modalContent">
-        <h2>My Old Portfolio</h2>
+        <h2>Games Assets</h2>
         
         <img class="modalImageGA" src="Assets/GameAssetsroject/menu_screen.png" alt="Enemy Animation Thumbnail">
         <div>
@@ -324,7 +350,7 @@
     <span class="close">&times;</span>
     <!-- Modal content -->
     <div class="modalContent">
-        <h2>My Old Portfolio</h2>
+        <h2>Optometry Poster</h2>
         <div>
             <p>
                 This is a poster that I worked on in my personal time. I worked with an optometrist to create a poster to highlight certain statistics about eye health that they had recently written a paper on. He wanted an aide for his presentation to the Eurpopean Union of Optometry.                <br><br> I used Adobe Photoshop to create the poster, focusing on a clean and professional design. I used a combination of images and text to create a visually appealing poster that would catch the attention of potential patients.
