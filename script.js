@@ -66,3 +66,14 @@ filterButtons.forEach(button => {
 
 // Initial display of all projects when the page loads
 filterProjects("all");
+
+
+// Nav bar to hamburger menu for responsiveness
+document.addEventListener('DOMContentLoaded', () => {
+        const hamburger = document.getElementById('hamburger');
+        const navList = document.querySelector('.nav-list');
+
+        hamburger.addEventListener('click', () => {
+        navList.classList.toggle('show'); // Must match CSS
+    });
+});

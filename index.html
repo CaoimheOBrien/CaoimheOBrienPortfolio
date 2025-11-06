@@ -20,6 +20,10 @@
                 <h1>Caoimhe's Projects</h1>
             </div>
             <nav class="nav">
+                <button class="hamburger" id="hamburger">
+                    ☰
+                </button>
+
                 <ul class="nav-list">
                     <li id="projectsLink"><a href= "index.html" class="nav-link">My Projects</a></li>
                     <li id="contactLink"><a href="contact.html" class="nav-link">Contact Me</a></li>
@@ -30,7 +34,7 @@
 
     <div id="optionFilterBar">
             <button class ="filterButton" data-filter="all">All</button>
-            <button class ="filterButton" data-filter="conceptArt">Concept Art</button>
+            <button class ="filterButton" data-filter="conceptArt">Digital Art</button>
             <button class ="filterButton" data-filter="animation">Animations</button>
             <button class ="filterButton" data-filter="website">Websites</button>
             <button class ="filterButton" data-filter="game">Games</button>
@@ -40,10 +44,10 @@
 <main>
     <div id="projectsContainer">
         <div class ="section" data-category="conceptArt">
-            <h1 data-category="conceptArt">Concept Art</h1>
+            <h1 data-category="conceptArt">Digital Art</h1>
             <div id="conceptArts">
                 <div class="project" data-category="conceptArt" data-modal = "stCuanModal">
-                    <img class="thumbnail" src="Assets/ConceptArt/St Cuan Thumbnail.png" alt="Enemy Animations Thumbnail">
+                    <img class="thumbnail" src="Assets/ConceptArt/St Cuan Thumbnail.png" alt="St Cuan Thumbnail">
                     <div class="TextDescription">
                         <h2>St Cuan for Dingle Animation</h2>
                         <p>This is a character I made for a games sting for the 2026 Dingle Animation Festival.
@@ -51,10 +55,18 @@
                     </div>
                 </div>
                 <div class="project" data-category="conceptArt" data-modal = "cowModal">
-                    <img class="thumbnail" src="Assets/ConceptArt/CowThumbnail.png" alt="Enemy Animations Thumbnail">
+                    <img class="thumbnail" src="Assets/ConceptArt/CowThumbnail.png" alt="Cow Thumbnail">
                     <div class="TextDescription">
                         <h2>Cow for Dingle Animation</h2>
                         <p>This is a character I made for a games sting for the 2026 Dingle Animation Festival.
+                        <br><br>Click to find out more!</p>
+                    </div>
+                </div>
+                <div class="project" data-category="conceptArt" data-modal = "stingBGModal">
+                    <img class="thumbnail" src="Assets/ConceptArt/AD - Logo BW - Horinzontal.png" alt="Dingle Animation Logo">
+                    <div class="TextDescription">
+                        <h2>Backgrounds for Dingle Animation</h2>
+                        <p>These are backgrounds I made for a games sting for the 2026 Dingle Animation Festival.
                         <br><br>Click to find out more!</p>
                     </div>
                 </div>
@@ -160,13 +172,20 @@
         
         <img class="modalImage" src="Assets/ConceptArt/St Cuan Thumbnail.png" alt="St Cuan thumbnail">
         <div>
-            <p>Concept art blah blah blah</p>
+            <p>This is a character that I created for our Dingle Animation 2025 Sting. The theme was "An Phiast's Untold Story" so we decided that our would be "An Phiast, An Spiaire" so An Phiast was an undercover spy that went around to different villages making sure that there is no evil animals. 
+                <br> <br>St Cuan is the villain of the game. I explored different styles and shapes for the character, I knew  I wanted him to have a long, looming presence and to be quite angular to contrast An Phiast. I explored different art styles. 
+            </p>
         </div>
         <img class="modalImage" src="Assets/ConceptArt/St Cuan Sketches.png" alt="Primary sketches">
+        <p>Primary Sketches</p>
         <img class="modalImage" src="Assets/ConceptArt/CharacterTurnaround.png" alt="Final Character turnaround">
+        <p>Character Turnaround</p>
+        <img class="modalImage" src="Assets/ConceptArt/Slide5.JPG" alt="Character moodboard">
+        <p>Mood board</p>
         <img class="modalImage" src="Assets/ConceptArt/St Cuan's Staff.png" alt="Staff ideas">
+        <p>St Cuan's Staff</p>
         <img class="modalImage" src="Assets/ConceptArt/StCuan_Forward.png" alt="Front View of St Cuan">
-        
+        <p>Final character</p>
     </div>
 </div>
 <div id="cowModal" class="modal">
@@ -174,16 +193,51 @@
     <!-- Modal content -->
     <div class="modalContent">
         <h2>Behind This Project</h2>
-        
+
         <img class="modalImage" src="Assets/ConceptArt/CowThumbnail.png" alt="Cow Thumbnail">
         <div>
-            <p>Concept art blah blah blah</p>
+            <p>This is a character that I created for our Dingle Animation 2025 Sting. The theme was "An Phiast's Untold Story" so we decided that our would be "An Phiast, An Spiaire" so An Phiast was an undercover spy that went around to different villages making sure that there is no evil animals. 
+                I explored different styles and shapes for the character, I knew I wanted her to be goofy and quite silly as she is a harmless character. She has an attitude and thinks that she is better than everyone so I juxta positioned her confidence with her hair and exaggerated shapes. 
+                <br><br> Additionally, I incorporated vibrant colors and dynamic poses to reflect her energetic personality, making her relatable and endearing to the audience. 
+                This approach not only enhances her visual appeal but also aligns with the lighthearted theme of the project, inviting viewers to connect with her story.
+            </p>
         </div>
         <img class="modalImage" src="Assets/ConceptArt/Cow Sketches.png" alt="Primary sketches">
+        <p>Primary Sketches</p>
+        <img class="modalImage" src="Assets/ConceptArt/Slide6.JPG" alt="Character Moodboard">
+        <p>Character Moodboard</p>
         <img class="modalImage" src="Assets/ConceptArt/cow.png" alt="Front View of Cow">
-        
+        <p>Final character</p>
+
     </div>
 </div>
+
+<div id="stingBGModal" class="modal">
+    <span class="close">&times;</span>
+    <!-- Modal content -->
+    <div class="modalContent">
+        <h2>Behind This Project</h2>
+        <img class="modalImage" src="Assets/ConceptArt/AD - Logo BW - Horinzontal.png" alt="Animation Dingle Logo">
+        <div>
+            <p>These are some backgrounds that I made for my Dingle Animation Game Sting 2026.</p>
+        </div>
+        <img class="modalImage" src="Assets/ConceptArt/Background_AnPhiastCave.png" alt="Background for An Phiast's Cave">
+        <p>This background depicts An Phiast's cave - a moody, atmospheric cavern used in the sting. This is where the characters have their "mission board", which holds their progress in the game.
+                <br><br>
+                Key choices: light from outside as the primary rim light, cool ambient fill for depth, textured rock surfaces, subtle fog and light shafts to suggest scale as well as waterfall, and small details (stalactites, stalagmites) to add story.
+                <br><br>
+                Created digitally with textured brushes: I blocked shapes at low resolution for readablity, refined lighting and colour contrast, then added final surface detail to retain clarity when used in the animation/game.
+        </p>
+        <img class="modalImage" src="Assets/ConceptArt/LakeCorrailli.png" alt="Lake Corrailli">
+        <p>This background depicts Lake Corrailli - the lake where An Phiast confronts St Cuan (spoiler I'm sorry).
+                <br><br>
+                Key choices: Lucious green grass and foilage surrounding the gorgeous blue lake. 
+                <br><br>
+                Created digitally with textured brushes: I blocked shapes at low resolution for readablity, refined lighting and colour contrast, then added final surface detail to retain clarity when used in the animation/game.
+        </p>
+    </div>
+</div>
+
 <div id="thisPortfolioModal" class="modal">
     <span class="close">&times;</span>
     <!-- Modal content -->

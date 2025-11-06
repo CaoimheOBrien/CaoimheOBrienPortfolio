@@ -81,6 +81,7 @@ nav {
     display: flex;
     gap: 20px;
     align-items: center;
+    justify-content: flex-end;
     padding: 10px 20px;
     background: rgba(255, 255, 255, 0.85); 
     border-radius: 12px;
@@ -119,6 +120,12 @@ nav li a:hover {
 nav li a.active {
     background-color: #a870c2;
     color: #fff;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
 }
 
 #logo-image{
@@ -181,7 +188,7 @@ nav li a.active {
     transition: transform 0.3s ease;
     z-index: 0;
 }
-    
+
 .filterButton:hover::before,
 .filterButton.active::before {
     transform: translateY(0.2);
@@ -220,12 +227,6 @@ nav li a.active {
     animation: fadeIn 1s ease;
 }
 
-.section > div {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
-}
-
 .project {
     border-radius: var(--border-radius);
     overflow: hidden;
@@ -252,7 +253,7 @@ p{
     text-align: left;
 }
 
-#websites, #animations, #games, #misc{
+#websites, #conceptArts, #animations, #games, #misc{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 30px;
@@ -282,9 +283,9 @@ p{
 }
 
 .project img.thumbnail {
-    width: 100%;
+    width: 70%;
     max-width: fit-content;
-    height: 220px;
+    max-height: 220px;
     padding: 20px; 
     object-fit: cover;
     transition: transform 0.5s ease;
@@ -293,7 +294,7 @@ p{
 
 /* Parallax-style image movement */
 .project:hover img.thumbnail {
-  transform: scale(1.1) translateY(-5px);
+    transform: scale(1.1) translateY(-5px);
 }
 
 /*----------------------------------------------------------------------------------------------------------------------*/
@@ -361,8 +362,10 @@ td{
     z-index: 50;
     left: 0;
     top: 0;
+    margin: auto; 
     width: 100%;
-    min-width: 1400px;
+    min-width: 400px;
+    max-width: 2800px;
     height: fit-content;
     background: rgba(10, 10, 10, 0.7);
     overflow: auto;
@@ -376,7 +379,7 @@ td{
     padding: 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
-    max-height: 90vh; /* content scrolls if taller than viewport */
+    max-height: 90vh;
     overflow-y: auto;
     width: 100%;
     max-width: 1300px;
@@ -441,16 +444,53 @@ footer {
 }
 
 /* ---------- RESPONSIVE ---------- */
-@media (max-width: 768px) {
+@media (max-width: 1010px) {
     header .container {
         flex-direction: column;
         text-align: center;
         gap: 0.5rem;
     }
 
+    #PageTitle h1 {
+        font-family: var(--font-heading);
+        font-size: 1.75rem;
+        color: var(--accent-color);
+        letter-spacing: 1px;
+        animation: slideUp 0.6s ease-in;
+    }
+
+
+    /* Hide horizontal links */
     .nav-list {
-        flex-wrap: wrap;
-        justify-content: center;
+        display: none;
+        flex-direction: column;
+        background-color: var(--accent-light);
+        position: absolute;
+        top: 100px;
+        right: 20px;
+        width: 200px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        z-index: 200;
+    }
+
+    /* Show links when menu is active */
+    .nav-links.show {
+        display: flex;
+    }
+
+    /* Show hamburger icon */
+    .hamburger {
+        font-size: 2rem;
+        color: #1F1F1F;
+        cursor: pointer;
+        position: absolute;
+        display: block;
+        top: 40px;
+        right: 20px;
+        background-color: none;
+        border: none;
     }
 
     #projectsContainer {
@@ -460,6 +500,8 @@ footer {
     .project img.thumbnail {
         height: 180px;
     }
+
+
 }
 
 #modalImage_NotesonOld{
