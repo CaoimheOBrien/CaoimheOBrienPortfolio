@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <title>Caoimhe O'Brien Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
     <link rel="icon" type="image/x-icon" href="Assets/Caoimhe_lOGO_NoBG.png">
 </head>
 
@@ -17,7 +16,7 @@
                 <img src="Assets/Caoimhe_lOGO_NoBG.png" alt="Logo" id="logo-image">
             </div>
             <div id="PageTitle">
-                <h1>Caoimhe's Projects</h1>
+                <h1>Caoimhe O'Brien's Projects</h1>
             </div>
             <nav class="nav">
                 <button class="hamburger" id="hamburger">
@@ -34,7 +33,8 @@
 
     <div id="optionFilterBar">
             <button class ="filterButton" data-filter="all">All</button>
-            <button class ="filterButton" data-filter="conceptArt">Digital Art</button>
+            <button class ="filterButton" data-filter="conceptArt">Concept Art</button>
+            <button class ="filterButton" data-filter="storyboard">Storyboards</button>
             <button class ="filterButton" data-filter="animation">Animations</button>
             <button class ="filterButton" data-filter="website">Websites</button>
             <button class ="filterButton" data-filter="game">Games</button>
@@ -44,7 +44,7 @@
 <main>
     <div id="projectsContainer">
         <div class ="section" data-category="conceptArt">
-            <h1 data-category="conceptArt">Digital Art</h1>
+            <h1 data-category="conceptArt">Concept Art</h1>
             <div id="conceptArts">
                 <div class="project" data-category="conceptArt" data-modal = "stCuanModal">
                     <img class="thumbnail" src="Assets/ConceptArt/St Cuan Thumbnail.png" alt="St Cuan Thumbnail">
@@ -68,6 +68,35 @@
                         <h2>Backgrounds for Dingle Animation</h2>
                         <p>These are backgrounds I made for a games sting for the 2026 Dingle Animation Festival.
                         <br><br>Click to find out more!</p>
+                    </div>
+                </div>
+                <div class="project" data-category="conceptArt" data-modal="LiliLasourrisModal">
+                    <img class="thumbnail" src="Assets/ConceptArt/Lili Lasourris Thumbnail.png" alt="Lili Lasourris Thumbnail">
+                    <div class="TextDescription">
+                        <h2>Lili Lasourris</h2>
+                        <p>This is an original character for a concept art project that I am working on in my spare time. 
+                        <br><br>Click to find out more!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" data-category="storyboard">
+            <h1 data-category="storyboard">Storyboards</h1>
+            <div id="storyboards">
+                <div class="project" data-category="storyboard" data-modal = "MorningRoutineStoryboards">
+                    <img class="thumbnail" src="Assets/ConceptArt/Storyboard_MorningRoutine_AllBoards.png" alt="Storyboard Thumbnail">
+                    <div class="TextDescription">
+                        <h2>Storyboard for Morning Routine</h2>
+                        <p>This is a storyboard I made for a 2D animation I made for one of my class in university using Adobe Animate.
+                        <br><br>Click to find out more!</p> 
+                    </div>
+                </div>
+                <div class="project" data-category="storyboard" data-modal="operaSingerStoryboard">
+                    <img class="thumbnail" src="Assets/Storyboard/Opera Singer Thumbnail.png" alt="Opera Singer Storyboard Thumbnail">
+                    <div class="TextDescription">
+                        <h2>Storyboard for Opera Singer</h2>
+                        <p>This is a storyboard I made for a 2D animation I made for one of my class in university using Adobe Animate.
+                        <br><br>Click to find out more!</p> 
                     </div>
                 </div>
             </div>
@@ -103,14 +132,6 @@
                     <img class="thumbnail" src="Assets/SageAcademy/SageAcademy1.png" alt="Old Portfolio Thumbnail">
                     <div class="TextDescription">
                         <h2>Sage Academy</h2>
-                        <p>Here is a portfolio website I made in college last year but I have since reworked it. 
-                        <br><br>Click to find out more!</p>
-                    </div>
-                </div>
-                <div class="project" data-category="website" data-modal = "oldPortfolioModal">
-                    <img class="thumbnail" src="Assets/OldPortfolio/OldPortfolio_Thumbnail.png" alt="Old Portfolio Thumbnail">
-                    <div class="TextDescription">
-                        <h2>Old Portfolio</h2>
                         <p>Here is a portfolio website I made in college last year but I have since reworked it. 
                         <br><br>Click to find out more!</p>
                     </div>
@@ -156,45 +177,36 @@
                 </div>
             </div>
         </div>
-        
     </div> <!-- End of projectsContainer -->
 </main>
 
 
 <!--Modals-->
 
-<!-- The Modal -->
+<!------------------CONCEPT ART----------------------------->
 <div id="stCuanModal" class="modal">
     <span class="close">&times;</span>
-    <!-- Modal content -->
     <div class="modalContent">
         <h2>Behind This Project</h2>
-        
-        <img class="modalImage" src="Assets/ConceptArt/St Cuan Thumbnail.png" alt="St Cuan thumbnail">
-        <div>
+            <div>
             <p>This is a character that I created for our Dingle Animation 2025 Sting. The theme was "An Phiast's Untold Story" so we decided that our would be "An Phiast, An Spiaire" so An Phiast was an undercover spy that went around to different villages making sure that there is no evil animals. 
                 <br> <br>St Cuan is the villain of the game. I explored different styles and shapes for the character, I knew  I wanted him to have a long, looming presence and to be quite angular to contrast An Phiast. I explored different art styles. 
             </p>
         </div>
-        <img class="modalImage" src="Assets/ConceptArt/St Cuan Sketches.png" alt="Primary sketches">
-        <p>Primary Sketches</p>
-        <img class="modalImage" src="Assets/ConceptArt/CharacterTurnaround.png" alt="Final Character turnaround">
-        <p>Character Turnaround</p>
-        <img class="modalImage" src="Assets/ConceptArt/Slide5.JPG" alt="Character moodboard">
-        <p>Mood board</p>
-        <img class="modalImage" src="Assets/ConceptArt/St Cuan's Staff.png" alt="Staff ideas">
-        <p>St Cuan's Staff</p>
-        <img class="modalImage" src="Assets/ConceptArt/StCuan_Forward.png" alt="Front View of St Cuan">
-        <p>Final character</p>
+        <div class="gallery">
+            <button class="previous" onclick="changeSlide(-1)"><</button>
+            <div class="modalImage"><img src="Assets/ConceptArt/St Cuan Sketches.png" alt="Primary sketches">These are primary sketches for St Cuan.</div>
+            <div class="modalImage"><img src="Assets/ConceptArt/Slide5.JPG" alt="Character moodboard">This is a moodboard for the character.</div>
+            <div class="modalImage"><img src="Assets/ConceptArt/St Cuan's Staff.png" alt="Staff ideas">These are some ideas for St Cuan's staff. This did not make it into the final design or the game</div>
+            <div class="modalImage"><img src="Assets/ConceptArt/CharacterTurnaround.png" alt="Final Character turnaround">This is the final character turnaround.</div>
+            <button class="next" onclick="changeSlide(1)">></button>
+        </div>
     </div>
 </div>
 <div id="cowModal" class="modal">
     <span class="close">&times;</span>
-    <!-- Modal content -->
     <div class="modalContent">
         <h2>Behind This Project</h2>
-
-        <img class="modalImage" src="Assets/ConceptArt/CowThumbnail.png" alt="Cow Thumbnail">
         <div>
             <p>This is a character that I created for our Dingle Animation 2025 Sting. The theme was "An Phiast's Untold Story" so we decided that our would be "An Phiast, An Spiaire" so An Phiast was an undercover spy that went around to different villages making sure that there is no evil animals. 
                 I explored different styles and shapes for the character, I knew I wanted her to be goofy and quite silly as she is a harmless character. She has an attitude and thinks that she is better than everyone so I juxta positioned her confidence with her hair and exaggerated shapes. 
@@ -202,13 +214,13 @@
                 This approach not only enhances her visual appeal but also aligns with the lighthearted theme of the project, inviting viewers to connect with her story.
             </p>
         </div>
-        <img class="modalImage" src="Assets/ConceptArt/Cow Sketcc:\Users\caoim\OneDrive - South East Technological University\IntContCreation\CaoimheOBrien_InteractiveContCreation\Animation Dingle\Moodboard\Slide6.JPGhes.png" alt="Primary sketches">
-        <p>Primary Sketches</p>
-        <img class="modalImage" src="Assets/ConceptArt/Slide6.JPG" alt="Character Moodboard">
-        <p>Character Moodboard</p>
-        <img class="modalImage" src="Assets/ConceptArt/cow.png" alt="Front View of Cow">
-        <p>Final character</p>
-
+        <div class="gallery">
+        <button class="previous" onclick="changeSlide(-1)"><</button>
+        <div class="modalImage"><img src="Assets/ConceptArt/CowThumbnail.png" alt="Cow Thumbnail">This is a thumbnail for Cow. She is the funny hench-cow of St. Cuan</div>
+        <div class="modalImage"><img src="Assets/ConceptArt/Slide6.JPG" alt="Character Moodboard">This is a moodboard for Cow.</div>
+        <div class="modalImage"><img src="Assets/ConceptArt/cow.png" alt="Front View of Cow">This is a front view of the Cow character.</div>
+        <button class="next" onclick="changeSlide(1)">></button>
+        </div>
     </div>
 </div>
 
@@ -217,34 +229,130 @@
     <!-- Modal content -->
     <div class="modalContent">
         <h2>Behind This Project</h2>
-        <img class="modalImage" src="Assets/ConceptArt/AD - Logo BW - Horinzontal.png" alt="Animation Dingle Logo">
+        <img class="dingleLogo" src="Assets/ConceptArt/AD - Logo BW - Horinzontal.png" alt="Animation Dingle Logo">
         <div>
-            <p>These are some backgrounds that I made for my Dingle Animation Game Sting 2026.</p>
+            <p>These are some backgrounds that I made for my Dingle Animation Game Sting 2026 I created 2 of the 5 locations for this game. </p>
         </div>
-        <img class="modalImage" src="Assets/ConceptArt/Background_AnPhiastCave.png" alt="Background for An Phiast's Cave">
-        <p>This background depicts An Phiast's cave - a moody, atmospheric cavern used in the sting. This is where the characters have their "mission board", which holds their progress in the game.
-                <br><br>
-                Key choices: light from outside as the primary rim light, cool ambient fill for depth, textured rock surfaces, subtle fog and light shafts to suggest scale as well as waterfall, and small details (stalactites, stalagmites) to add story.
-                <br><br>
-                Created digitally with textured brushes: I blocked shapes at low resolution for readablity, refined lighting and colour contrast, then added final surface detail to retain clarity when used in the animation/game.
-        </p>
-        <img class="modalImage" src="Assets/ConceptArt/LakeCorrailli.png" alt="Lake Corrailli">
-        <p>This background depicts Lake Corrailli - the lake where An Phiast confronts St Cuan (spoiler I'm sorry).
-                <br><br>
-                Key choices: Lucious green grass and foilage surrounding the gorgeous blue lake. 
-                <br><br>
-                Created digitally with textured brushes: I blocked shapes at low resolution for readablity, refined lighting and colour contrast, then added final surface detail to retain clarity when used in the animation/game.
-        </p>
+        <div class="gallery">
+            <button class="previous" onclick="changeSlide(-1)"><</button>
+            <div class="modalImage"><img src="Assets/ConceptArt/Background_AnPhiastCave.png" alt="Background for An Phiast's Cave"><p>This background depicts An Phiast's cave - a moody, atmospheric cavern used in the sting. This is where the characters have their "mission board", which holds their progress in the game.
+                <br><br>Key choices: light from outside as the primary rim light, cool ambient fill for depth, textured rock surfaces, subtle fog and light shafts to suggest scale as well as waterfall, and small details (stalactites, stalagmites) to add story.</p>
+            </div>
+            <div class="modalImage">
+                <img src="Assets/ConceptArt/LakeCorrailli.png" alt="Lake Corrailli">
+                <p>This background depicts Lake Corrailli - the lake where An Phiast confronts St Cuan (spoiler I'm sorry).
+                <br><br>Key choices: Lucious green grass and foilage surrounding the gorgeous blue lake.</p>
+            </div>
+            <button class="next" onclick="changeSlide(1)">></button>
+        </div>
     </div>
 </div>
 
+
+<div id="LiliLasourrisModal" class="modal">
+    <span class="close">&times;</span>
+    <!-- Modal content -->
+    <div class="modalContent">
+        <h2>Behind This Project</h2>
+        <div>
+        <p>This is Lili Lasourris, a character that I made as concept art for a short film, "Lasourris Très Bizarre", which translates to "Very Strange Lasourris". It is a short film set in Marseilles, France which follows Lili, a young girl who is trying her best to navigate the complexities of her daily life.
+        <br><br>Lili is a shy, young girl who does not have any whiskers, unlike the other rodents, this makes it hard for people to understand what she's feeling sometimes, she also finds it hard to read other peoples whiskers. She is the youngest of three, with her siblings having moved to the city, but Lili has committed herself to the quiet life.
+        <br><br>She is a curious and determined girl who faces various challenges throughout the film as she is not like the other rodents in her village. This short film would explore these of growing up with a neurodivergency, family, culture and rural life.
+        <br><br>Lasourris is a play on the words "La Souris" which means "the mouse" in French.
+    </p>
+        </div>
+        <div class="gallery">
+            <button class="previous" onclick="changeSlide(-1)"><</button>
+            <div class="modalImage"><img src="Assets/ConceptArt/Lili Mouse - Base Design.png" alt="Lili Lasourris"></div>
+            <div class="modalImage"><img src="Assets/ConceptArt/Lili Lasourris Moodboard.png" alt="Lili Lasourris Moodboard"></div>
+            <div class="modalImage"><img src="Assets/ConceptArt/lilMouse_CharacterExploration.png" alt="Lili Lasourris Character Design"></div>
+            <div class="modalImage"><img src="Assets/ConceptArt/lilMouse_Turnaround.png" alt="Lili Lasourris Character Turnaround"></div>
+            <div class="modalImage"><video width="400" height="300" controls><source src="Assets/ConceptArt/lilMouse_EyeAnimatiom.mp4" type="video/mp4">Oops, this browsers cannot play this video</video></div>
+            <button class="next" onclick="changeSlide(1)">></button>
+        </div>
+    </div>
+</div>
+
+<!------------------STORYBOARDS----------------------------->
+<div id="MorningRoutineStoryboards" class="modal">
+    <span class="close">&times;</span>
+    <div class="modalContent">
+        <h2>Behind This Project</h2>
+        <div>
+            <p>These are the storyboards for a 2D animatic I made for one of my class in university using Adobe Animate. The animatic is about a character's morning routine and the storyboards were created to plan out the different scenes and shots.
+                <br><br>Our class was told to create a storyboard for "something" and so I decided to put together my morning routine, to reflect on how I take certain, seemingly mundane, aspects of my day for granted. It was also an early morning class so, my morning routine was still on my mind.  
+                <br><br>Once I had chosen an idea, I wrote a basic script and colour coded it. Upon finishing the script, I created rough thumbnails for each of the shots. I paid attention to the composition and framing of each panel to ensure that it would be visually appealing and effective in conveying the story.
+                <br><br>Using the thumbnails I created an in-depth story board using Adobe Photoshop. I chose not to use colour in my animatic as Ireland most often has dull, foggy mornings. Once I finished the panels I put them together in Adobe Animate and After Effects to add sound and other sound effects that I found on youtube/ recorded myself. All SFX are not copyrighted and are free to use. The vocals were recorded by my classmate; Liam Treacy.
+            </p>
+        </div>
+        <div class="gallery">
+            <button class="previous" onclick="changeSlide(-1)"><</button>
+            <div class="modalImage"><img src="Assets/ConceptArt/Storyboard_MorningRoutine_AllBoards.png" alt="Storyboard Thumbnail">This is the full storyboard</div>
+            <div class="modalImage"><video width="600" height="400" controls><source src="Assets/ConceptArt/MorningRoutine_Animatic.mp4" type="video/mp4">Oops, this browsers cannot play this video</video><br>Here is the animatic from this storyboard.</div>
+            <div class="modalImage"><img src="Assets/ConceptArt/Amy_ShouldersBackDown.png" alt="Concept art of Amy the main character">Concept art of the "Amy", the character in the animatic.</div>
+            <div class="modalImage"><img src="Assets/ConceptArt/Morning Routine Script.png" alt="Panel 3 of the storyboard">Here is the end of the script with my notes highlighted. <br>Yellow was for setting, purple for props, blue for character action, red for camera action & effects in green.<br></div>
+            <div class="modalImage"><img src="Assets/ConceptArt/1.png" alt="First panel of the storyboard">First panel of the storyboard with the notes from my script.</div>
+            <div class="modalImage"><img src="Assets/ConceptArt/2_NoAmy.png" alt="Amy's wardrobe">Amy's Wardrobe - the background of panel 2 without Amy</div>
+            <div class="modalImage"><img src="Assets/ConceptArt/2.png" alt="Panel 2 of the storyboard">Panel 2 of the storyboard - with Amy and my notes.</div>
+            <div class="modalImage"><img src="Assets/ConceptArt/7.png" alt="7th panel of the storyboard">Seventh panel of the storyboard</div>
+            <div class="modalImage"> <img src="Assets/ConceptArt/8_CarGone_notpanel.png" alt="Moodboard for the animation">Town background in the animatic</div>
+            <div class="modalImage"><img src="Assets/ConceptArt/11.png" alt="Final panel of the storyboard">Final panel of the storyboard</div>
+            <button class="next" onclick="changeSlide(1)">></button>
+        </div>
+    </div>
+</div>
+
+<div id="operaSingerStoryboard" class="modal">
+    <span class="close">&times;</span>
+    <div class="modalContent">
+        <h2>Behind This Project</h2>
+        <div>
+            <p>These are the storyboards for a 2D animation I made for one of my class in university using Adobe Animate. We had to create an "unconventional representation of time".
+            <br><br>I started by throwing all my ideas into a mindmap using Figma, then from those ideas I took my top 3 and presented them to my lecturer. Based on his advice and insight, I chose my idea which I named "The Celestial Performer". Originally I wanted to depict a dancer moving across the stage but due to time constaints I went with a singer instead as it still conveyed the spirit of the idea.
+            <br><br>
+            </p>
+        </div>
+        <div class="gallery">
+            <button class="previous" onclick="changeSlide(-1)"><</button>
+            <div class="modalImage"><img src="Assets/Storyboard/Opera Singer with Moon Clock Full Storyboard.png" alt="Full storyboard for Opera Singer with Moon Clock"></div>
+            <div class="modalImage"><img src="Assets/Storyboard/Opera Singer Brainstorm.png" alt="Brainstorm of ideas for unconventional representation of time"></div>
+            <button class="next" onclick="changeSlide(1)">></button>
+        </div>
+    </div>
+</div>
+<!------------------ANIMATIONS----------------------------->
+<div id="enemiesAnimationModal" class="modal">
+    <span class="close">&times;</span>
+    <!-- Modal content -->
+    <div class="modalContent">
+        <h2>Enemy Animation</h2>
+        <div>
+            <p>
+                I created this 2D animation as part of a Concept Art for Games module in Semester 1 of Year 2 of my degree.
+            <br><br>The animation was created using a pixelated art style to give it a retro feel. I used a limited color palette to create a cohesive look and feel for the animation.
+            <br><br> I started by sketching out the basic design for the enemy character. I then created a series of frames for the animation using a software called Aesprite, focusing on the movement and actions of the character.
+            <br><br> I used a combination of traditional animation techniques and digital tools to create the animation. I made sure to pay attention to the timing and spacing of the animation to ensure that it was smooth and fluid, especially since it was going ot be used in a game.
+            <br><br> Overall, I am very happy with how this animation turned out. It showcases my skills as an animator and my ability to create engaging and visually appealing content.
+            </p>
+        </div>
+        <div class="gallery">
+        <button class="previous" onclick="changeSlide(-1)"><</button>
+        <img class="modalImage" src="Assets/EnemyAnimation/Enemy_Thumbnail.png" alt="Enemy Animation Thumbnail">
+        <img class="modalImage" src="Assets/EnemyAnimation/Enemy_Thumbnail.png" alt="Character Turnaound">
+        <img class="modalImage" src="Assets/EnemyAnimation/enemy1_idle.gif" alt="Enemy Idle Animation">
+        <img class="modalImage" src="Assets/EnemyAnimation/enemy1_shooting.gif" alt="Enemy Attack Cycle Animation">
+        <img class="modalImage" src="Assets/EnemyAnimation/enemy1_expire.gif" alt="Enemy Expire Animation">
+        <button class="next" onclick="changeSlide(1)">></button>
+        </div>
+    </div>
+</div>
+
+<!------------------WEBSITES----------------------------->
 <div id="SageAcademyModal" class="modal">
     <span class="close">&times;</span>
     <!-- Modal content -->
     <div class="modalContent">
         <h2>Sage Academy</h2>
-        
-        <img class="SgAImage" src="Assets/SageAcademy/SageAcademy1.png" alt="Sage Academy Thumbnail">
         <div>
             <p>Here is the link to the live page for this website: <a href="https://caoimheobrien.github.io/WebUIDesign_2025GroupProject/">Sage Academy Live link</a></p>
             <p>Here is the link to the GitHub repo: <a href="https://github.com/CaoimheOBrien/WebUIDesign_2025GroupProject">GitHub Link</a></p>
@@ -252,24 +360,25 @@
                 This website was created as a group project for my Web UI Design module in Semester 2 of Year 2 of my degree.
                 <br><br>Our group was tasked with creating a website for a fictional educational institution called "Sage Academy". The website was to be designed to attract potential students and provide information about the courses and programs offered by the academy.
                 <br><br>As a group, we started by researching other educational websites to get an idea of what worked well and what didn't. We also brainstormed ideas for the layout and design of the website.
-                <br><br>Once we had a solid plan in place, we divided the work among the group members.
-                <br><br>I moved towards a leadership role in this project, as I had more experience with web design and development than some of the other group members. I took on the role of project manager, ensuring that everyone was on track and that the project was progressing smoothly.
+                <br><br>Once we had a solid plan in place, we divided the work among the group members. I moved towards a leadership role in this project, as I had more experience with web design and development than some of the other group members. I took on the role of project manager, ensuring that everyone was on track and that the project was progressing smoothly.
                 <br><br>We used PenPot to create wireframes and prototypes for the website. This allowed us to visualize the layout and design of the website before we started coding.
                 <br><br>I was tasked with creating the sign-in, contact us, and quizzes pages for the website. I also created several components that were used throughout the site, such as buttons, cards and forms.
                 <br><br>We used a combination of HTML, CSS, and JavaScript to create the website. We also made sure to optimize the website for mobile devices, as we knew that many potential students would be accessing the site from their phones.
-                <br><br>Overall, I am very proud of the work that our group did on this project. The website turned out great, and Ilearned a lot about working through conflict resolution and collaboration in a team setting.
+                <br><br>Overall, I am very proud of the work that our group did on this project. The website turned out great, and I learned a lot about working through conflict resolution and collaboration in a team setting.
             </p>
-            <img class="SgAImage" src="Assets/SageAcademy/SageAcademy2.png" alt="Sage Academy page">`
-            <img class="SgAImage" src="Assets/SageAcademy/SageAcademy3.png" alt="Sage Academy page">
-            <img class="SgAImage" src="Assets/SageAcademy/SageAcademy3.2.png" alt="Sage Academy page">
-            <img class="SgAImage" src="Assets/SageAcademy/SageAcademy3.3.png" alt="Sage Academy page">
-            <img class="SgAImage" src="Assets/SageAcademy/SageAcademy4.1.png" alt="Sage Academy page">
-            <img class="SgAImage" src="Assets/SageAcademy/SageAcademy4.2.png" alt="Sage Academy page">
-            <img class="SgAImage" src="Assets/SageAcademy/SageAcademy4.3.png" alt="Sage Academy page">
-
+            <div class="gallery">
+                <button class="previous" onclick="changeSlide(-1)"><</button>
+                    <div class="modalImage"><img src="Assets/SageAcademy/SageAcademy1.png" alt="Sage Academy page"> This is our home page. There were 2 types of accounts for this website: student and staff member.</div>
+                    <div class="modalImage"><img src="Assets/SageAcademy/SageAcademy3.png" alt="Sage Academy page">Upon choosing their affiliation,users are then asked to log in.</div>
+                    <div class="modalImage"><img src="Assets/SageAcademy/SageAcademy3.2.png" alt="Sage Academy page">Our sign-in page included fields for username and password, and were checked for validity.</div>
+                    <div class="modalImage"><img src="Assets/SageAcademy/SageAcademy3.3.png" alt="Sage Academy page"></div>
+                    <div class="modalImage"><img src="Assets/SageAcademy/SageAcademy4.1.png" alt="Sage Academy page">This is the "QUIZ" section, which I worked on. Students could take quizzes provided by their lecturers.</div>
+                    <div class="modalImage"><img src="Assets/SageAcademy/SageAcademy4.2.png" alt="Sage Academy page">The users were provided with their answers in real time, set by the lecturer.</div>
+                    <div class="modalImage"><img src="Assets/SageAcademy/SageAcademy4.3.png" alt="Sage Academy page"></div>
+                    <div class="modalImage"><img src="Assets/SageAcademy/SageAcademy2.png" alt="Sage Academy page">This is the "CONTACT US" page, which I also worked on.</div>
+                <button class="next" onclick="changeSlide(1)">></button>
+            </div>
         </div>
-        
-        
     </div>
 </div>
 
@@ -278,7 +387,6 @@
     <!-- Modal content -->
     <div class="modalContent">
         <h2>My Old Portfolio</h2>
-        
         <img class="modalImageOP" src="Assets/OldPortfolio/OldPortfolio_Thumbnail.png" alt="This Portfolio Thumbnail">
         <div>
             <p>
@@ -300,36 +408,13 @@
     </div>
 </div>
 
-<div id="enemiesAnimationModal" class="modal">
-    <span class="close">&times;</span>
-    <!-- Modal content -->
-    <div class="modalContent">
-        <h2>Enemy Animation</h2>
-        
-        <img class="modalImageEA" src="Assets/EnemyAnimation/Enemy_Thumbnail.png" alt="Enemy Animation Thumbnail">
-        <div>
-            <p>
-                I created this 2D animation as part of a Concept Art for Games module in Semester 1 of Year 2 of my degree.
-            <br><br>The animation was created using a pixelated art style to give it a retro feel. I used a limited color palette to create a cohesive look and feel for the animation.
-            <br><br> I started by sketching out the basic design for the enemy character. I then created a series of frames for the animation using a software called Aesprite, focusing on the movement and actions of the character.
-            <br><br> I used a combination of traditional animation techniques and digital tools to create the animation. I made sure to pay attention to the timing and spacing of the animation to ensure that it was smooth and fluid, especially since it was going ot be used in a game.
-            <br><br> Overall, I am very happy with how this animation turned out. It showcases my skills as an animator and my ability to create engaging and visually appealing content.
-            </p>
-        </div>
-        <img class="modalImageEA" src="Assets/EnemyAnimation/Enemy_Thumbnail.png" alt="Character Turnaound">
-        <img class="modalImageEA" src="Assets/EnemyAnimation/enemy1_idle.gif" alt="Enemy Idle Animation">
-        <img class="modalImageEA" src="Assets/EnemyAnimation/enemy1_shooting.gif" alt="Enemy Attack Cycle Animation">
-        <img class="modalImageEA" src="Assets/EnemyAnimation/enemy1_expire.gif" alt="Enemy Expire Animation">
-    </div>
-</div>
-
+<!------------------GAMES----------------------------->
 <div id="coffeeUtopiaModal" class="modal">
     <span class="close">&times;</span>
     <!-- Modal content -->
     <div class="modalContent">
         <h2>CoffeeUtopia</h2>
-        
-        <img class="modalImageCU" src="Assets/Game/coffeeUtopia_Thumbnail.png" alt="Enemy Animation Thumbnail">
+        <img class="modalImage" src="Assets/Game/coffeeUtopia_Thumbnail.png" alt="Enemy Animation Thumbnail">
         <div>
             <p>
                 I created this 2D game as part of a UI prototyping module in Semester 1 of Year 2 of my degree. Our prompt was to make a game based on the theme of "Utopia" and I felt that my perfect utopia was a nice cozy coffee shop.
@@ -340,19 +425,17 @@
                 <br><br> Overall, I am very happy with how this game turned out. It showcases my skills as a game designer and my ability to create engaging and visually appealing content.
             </p>
         </div>
-        <img class="modalImageCU" src="Assets/Game/coffeeUtopia_Thumbnail.png" alt="Coffee Utopia Game Screenshot 1">
+        <img class="modalImage" src="Assets/Game/coffeeUtopia_Thumbnail.png" alt="Coffee Utopia Game Screenshot 1">
     </div>
 </div>
 
 
-
+<!------------------MISC.----------------------------->
 <div id="gameAssetsModal" class="modal">
     <span class="close">&times;</span>
     <!-- Modal content -->
     <div class="modalContent">
         <h2>Games Assets</h2>
-        
-        <img class="modalImageGA" src="Assets/GameAssetsroject/menu_screen.png" alt="Enemy Animation Thumbnail">
         <div>
             <p>
                 I created these game assets for a project last year in my degree. I used Aesprite to create these pixelated assets.
@@ -362,12 +445,17 @@
                 <br><br> Overall, I am very happy with how these assets turned out.
             </p>
         </div>
-        <img class="modalImageGA" src="Assets/GameAssetsroject/restart_screen.png" alt="Game Screenshot 1">
-        <img class="modalImageGA" src="Assets/GameAssetsroject/bg1.png" alt="Game Screenshot background">
-        <img class="modalImageGA" src="Assets/GameAssetsroject/bg2.png" alt="Game Screenshot background">
-        <img class="modalImageGA" src="Assets/GameAssetsroject/enemy1.png" alt="Game Enemy 1">
-        <img class="modalImageGA" src="Assets/GameAssetsroject/enemy2.png" alt="Game Enemy 2">
-        <img class="modalImageGA" src="Assets/GameAssetsroject/hero.png" alt="Game Hero">
+        <div class="gallery">
+            <button class="previous" onclick="changeSlide(-1)"><</button>
+            <img class="modalImage" src="Assets/GameAssetsroject/menu_screen.png" alt="Enemy Animation Thumbnail">
+            <img class="modalImage active" src="Assets/GameAssetsroject/restart_screen.png" alt="Game Screenshot 1">
+            <img class="modalImage" src="Assets/GameAssetsroject/bg1.png" alt="Game Screenshot background">
+            <img class="modalImage" src="Assets/GameAssetsroject/bg2.png" alt="Game Screenshot background">
+            <img class="modalImage" src="Assets/GameAssetsroject/enemy1.png" alt="Game Enemy 1">
+            <img class="modalImage" src="Assets/GameAssetsroject/enemy2.png" alt="Game Enemy 2">
+            <img class="modalImage" src="Assets/GameAssetsroject/hero.png" alt="Game Hero">
+            <button class="next" onclick="changeSlide(1)">></button>
+        </div>
     </div>
 </div>
 
@@ -378,20 +466,22 @@
         <h2>Optometry Poster</h2>
         <div>
             <p>
-                This is a poster that I worked on in my personal time. I worked with an optometrist to create a poster to highlight certain statistics about eye health that they had recently written a paper on. He wanted an aide for his presentation to the Eurpopean Union of Optometry.                <br><br> I used Adobe Photoshop to create the poster, focusing on a clean and professional design. I used a combination of images and text to create a visually appealing poster that would catch the attention of potential patients.
-                <br><br> I made sure to pay attention to the typography and layout of the poster to ensure that it was easy to read and understand.
-                <br><br> I used a color scheme that was consistent with the optometrist's branding, using blues and greens to create a calming and professional look as well as ensuring that it could be read by people with a variety of different levels of colour blindess. 
-                <br><br> Overall, I am very happy with how this poster turned out. It showcases my skills as a graphic designer and my ability to create engaging and visually appealing content.
+                This is a poster that I worked on in my personal time. I worked with an optometrist to create a poster to highlight certain statistics about eye health that they had recently written a paper on. He wanted an aide for his presentation to the Eurpopean Union of Optometry.
+                <br><br> In addition to working with the author on the design and typography of the poster for display I also assisted with the data analysis and am named co-author of this academic peer-reviewed publication which was published / displayed at the 2025 European Academy of Optometry & Optics in Ljubljana. 
+                <br><br> I used Adobe Photoshop to create the poster, focusing on a clean and professional design. I used a combination of images and text to create a visually appealing poster that would catch the attention of potential patients.
+                <br><br> I made sure to pay attention to the typography and layout of the poster to ensure that it was easy to read and understand. I used a color scheme that was consistent with the optometrist's branding, using blues and greens to create a calming and professional look as well as ensuring that it could be read by people with a variety of different levels of colour blindess. 
+                <br><br> Overall, I am very happy with how this poster turned out. It showcases my skills as a graphic designer and my ability to create engaging and visually appealing content. I am also very proud to have co-authored this publication and to have contributed to the field of optometry in this way.
             </p>
         </div>
         <img class="modalImageOPPos" src="Assets/OptometryPoster.jpg" alt="Optometry Poster">
-        
     </div>
 </div>
+
+    <script src="script.js"></script>
 
 </body>
 
 <footer>
-    <p>&copy; 2024 Caoimhe O'Brien</p>
+    <span style="position: static; align-content: end;"><p>&copy; 2026 Caoimhe O'Brien | 2026 COB Animations </p></span>
 </footer>
 </html>

@@ -4,10 +4,10 @@
 /*----------------------------------------------------------------------------------------------------------------------*/
 /* Global Styles */
 :root {
-    --accent: #6a0f89;         /* main brand color */
-    --accent-light: #f5e1fb;   
+    --accent: #004d06;
+    --accent-light: #c1e284;
     --light-text: #5f6368;
-    --card-bg: #ffebff;
+    --card-bg: #fdf7e1;
     --border-radius: 1.25rem;
     --transition: all 0.3s ease;
     --shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
@@ -60,7 +60,11 @@ header .container {
 
 
 #logo-image {
-    height: 60px;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
     transition: transform 0.5s ease;
     transform-origin: center;
 }
@@ -76,6 +80,17 @@ header .container {
     letter-spacing: 1px;
     animation: slideUp 0.6s ease-in;
 }
+
+#PageTitle{
+    position: absolute;
+    top: 35px;
+    left: 235px;
+    font-size: 24px;
+    color: #1F1F1F;
+    font-weight: 24;
+}
+
+
 
 nav {
     display: flex;
@@ -124,25 +139,8 @@ nav li a.active {
 
 .hamburger {
     display: none;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     cursor: pointer;
-}
-
-#logo-image{
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: 15px;
-    left: 30px;
-}
-
-#PageTitle{
-    position: absolute;
-    top: 35px;
-    left: 235px;
-    font-size: 24px;
-    color: #1F1F1F;
-    font-weight: 24;
 }
 
 /*----------------------------------------------------------------------------------------------------------------------*/
@@ -253,7 +251,7 @@ p{
     text-align: left;
 }
 
-#websites, #conceptArts, #animations, #games, #misc{
+#websites, #conceptArts, #storyboards, #animations, #games, #misc{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 30px;
@@ -292,46 +290,8 @@ p{
     transform-origin: center center;
 }
 
-/* Parallax-style image movement */
 .project:hover img.thumbnail {
     transform: scale(1.1) translateY(-5px);
-}
-
-/*----------------------------------------------------------------------------------------------------------------------*/
-/*Contact Page Edits */
-
-#contactContainer{
-    width: 80%;
-    max-width: 800px;
-    padding: 20px;
-    margin: 24px auto;
-    text-align: left;
-}
-
-#contactItem{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-top: auto;
-    margin-right: auto;
-    color: #1F1F1F;
-    font-size: 16px;
-}
-
-table{
-    width: 100%
-}
-
-td{
-    padding: 10px;
-}
-
-.icon{
-    width: 90px;
-    height: 90px;
-
-    margin-top: auto;
-    margin-left: auto;
 }
 
 
@@ -349,11 +309,58 @@ td{
 }
 
 .readMoreBtn:hover {
-    background: #3b6ea7;
+    background: #3ba76c;
     transform: scale(1.05);
 }
 
 
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*Contacts */
+
+#contactContainer{
+    width: 80%;
+    max-width: 2080px;
+    padding: 15px;
+    text-align: left;
+    margin: auto; 
+}
+
+
+.contactTable{
+    width: 80%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+td{
+    padding: 10px;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+
+    margin-top: auto;
+    margin-left: auto;
+}
+
+#aboutMeAside{
+    width: 50%;
+    max-width: 350px;
+    margin: 4rem 2rem;
+    padding: 1rem;
+    float: right;
+    background: var(--accent-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    text-align: center; 
+    z-index: 200;
+}
+
+#profile-pic{
+    width: 200px;
+    margin: auto; 
+}
 /*----------------------------------------------------------------------------------------------------------------------*/
 /*Modal Styles */
 .modal {
@@ -364,9 +371,10 @@ td{
     top: 0;
     margin: auto; 
     width: 100%;
-    min-width: 400px;
+    min-width: 100px;
     max-width: 2800px;
-    height: fit-content;
+    height: 100%;
+    max-height: 120vh;
     background: rgba(10, 10, 10, 0.7);
     overflow: auto;
     animation: fadeIn 0.5s ease forwards;
@@ -377,9 +385,9 @@ td{
     background: var(--card-bg);
     margin: 5% auto;
     padding: 2rem;
+    margin-bottom: 4rem;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
-    max-height: 90vh;
     overflow-y: auto;
     width: 100%;
     max-width: 1300px;
@@ -421,88 +429,6 @@ td{
     transform: rotate(90deg);
 }
 
-/* ---------- FOOTER ---------- */
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background: var(--card-bg);
-    color: var(--light-text);
-    margin-top: 3rem;
-    border-top: 1px solid #e5e5e5;
-    animation: fadeIn 0.8s ease;
-}
-
-/* ---------- ANIMATIONS ---------- */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes slideUp {
-    from { transform: translateY(40px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
-/* ---------- RESPONSIVE ---------- */
-@media (max-width: 1010px) {
-    header .container {
-        flex-direction: column;
-        text-align: center;
-        gap: 0.5rem;
-    }
-
-    #PageTitle h1 {
-        font-family: var(--font-heading);
-        font-size: 1.75rem;
-        color: var(--accent-color);
-        letter-spacing: 1px;
-        animation: slideUp 0.6s ease-in;
-    }
-
-
-    /* Hide horizontal links */
-    .nav-list {
-        display: none;
-        flex-direction: column;
-        background-color: var(--accent-light);
-        position: absolute;
-        top: 100px;
-        right: 20px;
-        width: 200px;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: var(--shadow);
-        z-index: 200;
-    }
-
-    /* Show links when menu is active */
-    .nav-links.show {
-        display: flex;
-    }
-
-    /* Show hamburger icon */
-    .hamburger {
-        font-size: 2rem;
-        color: #1F1F1F;
-        cursor: pointer;
-        position: absolute;
-        display: block;
-        top: 40px;
-        right: 20px;
-        background-color: none;
-        border: none;
-    }
-
-    #projectsContainer {
-        padding: 1rem;
-    }
-
-    .project img.thumbnail {
-        height: 180px;
-    }
-
-
-}
 
 #modalImage_NotesonOld{
     width: 500px;
@@ -519,4 +445,600 @@ footer {
 .modalImageOPPos{
     width:300px;
     margin: 10px;
+}
+
+/* Gallery Element in the Modal */
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.modalImage {
+    display:none; 
+    max-width: 70%;
+    max-height: 80vh;
+    min-height: 30vh; 
+    align-items: center;
+}
+
+.modalImage.active {
+    display: block;
+}
+
+button.previous, button.next {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--accent);
+    cursor: pointer;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    text-align: center;
+    padding: 1rem 0.5rem;
+    background: var(--card-bg);
+    color: var(--light-text);
+    margin-top: 3rem;
+    bottom: 0;
+    border-top: 1px solid #e5e5e5;
+    animation: fadeIn 0.8s ease;
+}
+
+/* ---------- ANIMATIONS ---------- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+/* Width: 1569px (for filter buttons */
+@media (max-width: 1569px) {
+    /* Filters */
+    #optionFilterBar {
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .filterButton {
+        width: 120px;
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    #aboutMeAside{
+        max-width: 300px;
+        font-size: 12px;
+    }
+
+    .contactTable{
+        max-width: 900px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1475px) { /*For contact table*/
+    .contactTable{
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 1360px) { /*For modal content & contact table*/
+    /* Modal */
+    .modalContent {
+        max-width: 1000px;
+        padding: 1.5rem;
+    }
+
+    .contactTable{
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 1280px) { /*contact table*/
+    .contactTable{
+        width: 100%;
+        max-width: 650px;
+    }
+
+    .icon{
+        width:35px; 
+        height: 35px;
+    }
+
+    td{
+        padding: 5px;
+    }
+
+    #aboutMeAside{
+        width: 100%;
+        max-width: 275px;
+    }
+
+    #profile-pic{
+        width: 150px;
+    }
+    .aboutMeAside h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1210px) {
+
+    .header{
+        height: auto;
+        padding: 1rem;
+    }
+
+
+    #logo-image {
+        position: relative;
+        width: 140px;
+        height: auto;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    #PageTitle {
+        position: static;
+        top: 0;
+        left: 10;
+        text-align:left;
+        width: 60%;
+    }
+
+    #PageTitle h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        color: --var(--accent-color);
+    }
+
+    nav {
+        width: auto;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+        position: static;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 15vh;
+
+        padding: 1rem 1.5rem 2rem;
+        gap: 0.5rem;
+
+        background: var(--card-bg);
+        box-shadow: -4px 0 20px rgba(0,0,0,0.15);
+
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+
+    nav ul.show {
+        right: 0;
+    }
+    nav li a {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        background-color: #ffffff;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Hamburger */
+    .hamburger {
+        display: inline-flex;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        font-size: 2rem;
+        border: none;
+        border-radius: 0.75rem; 
+        background: white;
+        padding: 0.5rem;
+        color: #1F1F1F;
+        cursor: pointer;
+    }
+
+    /* Filters */
+    #optionFilterBar {
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .filterButton {
+        width: 140px;
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    /* Projects */
+    #projectsContainer {
+        padding: 1rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #websites,
+    #conceptArts,
+    #storyboards,
+    #animations,
+    #games,
+    #misc {
+        grid-template-columns: repeat(2, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    /*  The projects*/
+    .project img.thumbnail {
+        width: 100%;
+        object-fit: contain;
+        max-width: 100%;
+        height: 120px;
+        padding: 0;
+    }
+
+    .TextDescription {
+        padding: 1rem;
+    }
+
+    .TextDescription h2 {
+        font-size: 1.1rem;
+    }
+
+    .modal img,
+    .SgAImage,
+    .modalImageOP,
+    .modalImageCU,
+    #modalImage_NotesonOld {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .modalImage {
+        max-width: 80%;
+    }
+
+    button.previous,
+    button.next {
+        font-size: 1.5rem;
+    }
+
+    table {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .contactTable {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    #aboutMeAside p{
+        font-size: 11px;
+    }
+
+    #contactItem {
+        justify-content: center;
+    }
+
+    .icon{
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1199px) {
+    .contactTable {
+        width: 100%;
+        font-size: 12px;
+        max-width: 550px;
+    }
+
+    #aboutMeAside p{
+        font-size: 12px;
+    }
+
+    #contactItem {
+        justify-content: center;
+    }
+
+    #profile-pic{
+        width: 80px;
+    }
+
+}
+/* Again for modal content */
+@media (max-width: 1084px) {
+    /* Modal */
+    .modalContent {
+        width: 70%;
+        max-width: 900px;
+        padding: 1.5rem;
+    }
+
+    .contactTable{
+        max-width: 500px;
+    }
+
+    td{
+        padding: 1px;
+    }
+
+    #aboutMeAside{
+        max-width: 200px;
+    }
+
+    #aboutMeAside p{
+        font-size: 10px;
+    }
+
+}
+
+@media(max-width: 870px){
+    .contactTable{
+        width: 100%;
+        font-size: 14px;
+        max-width: 650px;
+    }
+
+    #aboutMeAside{
+        width: 100%;
+        max-width: 655px;
+        float: none;
+        margin: 1rem auto;
+    }
+
+    #aboutMeAside h2 {
+        font-size: 2rem;
+    }
+
+    #aboutMeAside p{
+        font-size: 14px;
+    }
+
+    #profile-pic{
+        width: 150px;
+    }
+}
+
+@media (max-width: 700px) {
+    .contactTable{
+        max-width: 500px;
+    }
+
+    td{
+        padding: 0.7px;
+    }
+
+    #aboutMeAside{
+        max-width: 400px;
+    }
+
+    #profile-pic{
+        width: 100px;
+    }
+
+    .icon{
+        width: 100px;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 600px) {
+
+    .header {
+        padding: 1rem 0.75rem;
+    }
+
+    #logo-image {
+        width: 90px;
+    }
+    #PageTitle h1 {
+        font-size: 1rem;
+    }
+
+    nav {
+        padding: 0.25rem;
+        border-radius: 10px;
+        width:fit-content;
+    }
+
+    nav li a {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .hamburger {
+        top: 10px;
+        right: 15px;
+        font-size: 1.8rem;
+    }
+
+    /* Filters */
+    .filterButton {
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+        padding: 10px;
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    /* Sections */
+    .section h1 {
+        font-size: 1rem;
+    }
+
+    /* Project Cards */
+    #websites,
+    #conceptArts,
+    #storyboards,
+    #animations,
+    #games,
+    #misc {
+        grid-template-columns: 1fr;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .project img.thumbnail {
+        height: auto;
+        max-height: 220px;
+    }
+
+    .TextDescription h2 {
+        font-size: 1rem;
+    }
+
+    .TextDescription p {
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    /* Modal */
+    .modal {
+        min-width: 100%;
+    }
+
+    .modalContent {
+        width: 95%;
+        padding: 1rem;
+        max-width: 550px;
+        min-width: 260px; 
+        margin-top: 20%;
+    }
+
+    .close {
+        top: 10px;
+        right: 15px;
+        font-size: 1.5rem;
+    }
+
+    /* Gallery */
+    button.previous,
+    button.next {
+        font-size: 1.25rem;
+    }
+
+    /* Contact */
+    #contactContainer {
+        width: 80%;
+    }
+
+    .icon {
+        width: 70px;
+    }
+
+    .contactTable {
+        max-width: 400px;
+        font-size: 10px;
+    }
+
+    #aboutMeAside{
+        max-width: 350px;
+        margin: 1rem auto;
+    }
+
+    #aboutMeAside h2 {
+        font-size: 0.5rem;
+    }
+
+    #aboutMeAside p{
+        font-size: 9px;
+    }
+    footer {
+        font-size: 0.85rem;
+        padding: 1rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 475px) {
+    #contactContainer h1{
+        font-size: 1.25rem;
+    }
+
+    #contactContainer p{
+        font-size: 10px;
+    }
+    .contactTable {
+        max-width: 300px;
+        font-size: 8px;
+    }
+
+    #aboutMeAside{
+        max-width: 300px;
+    }
+
+    #profile-pic{
+        width: 65px;
+        border-radius: 0%;
+    }
+
+    td{
+        padding: 0.2px;
+    }
+}
+
+@media(max-width: 375px){
+    .contactTable {
+        max-width: 250px;
+        font-size: 6.5px;
+    }
+
+    #aboutMeAside{
+        max-width: 250px;
+    }
+
+    #aboutMeAside p{
+        font-size: 8px;
+    }
+
+    #profile-pic{
+        width: 50px;
+        border-radius: 0%;
+    }
+
+}
+
+@media(max-width: 320px){
+    .contactTable {
+        max-width: 240px;
+        font-size: 6px;
+    }
+
+    #aboutMeAside{
+        max-width: 240px;
+    }
+
+    #aboutMeAside p{
+        font-size: 7px;
+    }
+
+    .icon{
+        height: 20px;
+    }
 }
