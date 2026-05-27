@@ -267,7 +267,7 @@
             <div class="modalImage"><img src="Assets/ConceptArt/Lili Lasourris Moodboard.png" alt="Lili Lasourris Moodboard"></div>
             <div class="modalImage"><img src="Assets/ConceptArt/lilMouse_CharacterExploration.png" alt="Lili Lasourris Character Design"></div>
             <div class="modalImage"><img src="Assets/ConceptArt/lilMouse_Turnaround.png" alt="Lili Lasourris Character Turnaround"></div>
-            <div class="modalImage"><video width="400" height="300" controls><source src="Assets/ConceptArt/lilMouse_EyeAnimatiom.mp4" type="video/mp4">Oops, this browsers cannot play this video</video></div>
+            <div class="modalImage"><video id="liliVideo" width="300" height="400" controls><source src="Assets/ConceptArt/lilMouse_EyeAnimatiom.mp4" type="video/mp4">Oops, this browsers cannot play this video</video></div>
             <button class="next" onclick="changeSlide(1)">></button>
         </div>
     </div>
@@ -288,7 +288,7 @@
         <div class="gallery">
             <button class="previous" onclick="changeSlide(-1)"><</button>
             <div class="modalImage"><img src="Assets/ConceptArt/Storyboard_MorningRoutine_AllBoards.png" alt="Storyboard Thumbnail">This is the full storyboard</div>
-            <div class="modalImage"><video width="600" height="400" controls><source src="Assets/ConceptArt/MorningRoutine_Animatic.mp4" type="video/mp4">Oops, this browsers cannot play this video</video><br>Here is the animatic from this storyboard.</div>
+            <div class="modalImage"><video id="morningRoutineVideo" width="600" height="400" controls><source src="Assets/ConceptArt/MorningRoutine_Animatic.mp4" type="video/mp4">Oops, this browsers cannot play this video</video><br>Here is the animatic from this storyboard.</div>
             <div class="modalImage"><img src="Assets/ConceptArt/Amy_ShouldersBackDown.png" alt="Concept art of Amy the main character">Concept art of the "Amy", the character in the animatic.</div>
             <div class="modalImage"><img src="Assets/ConceptArt/Morning Routine Script.png" alt="Panel 3 of the storyboard">Here is the end of the script with my notes highlighted. <br>Yellow was for setting, purple for props, blue for character action, red for camera action & effects in green.<br></div>
             <div class="modalImage"><img src="Assets/ConceptArt/1.png" alt="First panel of the storyboard">First panel of the storyboard with the notes from my script.</div>
@@ -337,20 +337,19 @@
         </div>
         <div class="gallery">
         <button class="previous" onclick="changeSlide(-1)"><</button>
-        <img class="modalImage" src="Assets/EnemyAnimation/Enemy_Thumbnail.png" alt="Enemy Animation Thumbnail">
-        <img class="modalImage" src="Assets/EnemyAnimation/Enemy_Thumbnail.png" alt="Character Turnaound">
-        <img class="modalImage" src="Assets/EnemyAnimation/enemy1_idle.gif" alt="Enemy Idle Animation">
-        <img class="modalImage" src="Assets/EnemyAnimation/enemy1_shooting.gif" alt="Enemy Attack Cycle Animation">
-        <img class="modalImage" src="Assets/EnemyAnimation/enemy1_expire.gif" alt="Enemy Expire Animation">
+        <img class="modalImageEnemy" src="Assets/EnemyAnimation/Enemy_Thumbnail.png" alt="Character Turnaound">
+        <img class="modalImageEnemy" src="Assets/EnemyAnimation/enemy1_idle.gif" alt="Enemy Idle Animation">
+        <img class="modalImageEnemy" src="Assets/EnemyAnimation/enemy1_shooting.gif" alt="Enemy Attack Cycle Animation">
+        <img class="modalImageEnemy" src="Assets/EnemyAnimation/enemy1_expire.gif" alt="Enemy Expire Animation">
         <button class="next" onclick="changeSlide(1)">></button>
         </div>
     </div>
 </div>
 
-<!------------------WEBSITES----------------------------->
+<!------------------WEBSITES---------------------------
 <div id="SageAcademyModal" class="modal">
     <span class="close">&times;</span>
-    <!-- Modal content -->
+    Modal content 
     <div class="modalContent">
         <h2>Sage Academy</h2>
         <div>
@@ -384,7 +383,7 @@
 
 <div id="oldPortfolioModal" class="modal">
     <span class="close">&times;</span>
-    <!-- Modal content -->
+    - Modal content -
     <div class="modalContent">
         <h2>My Old Portfolio</h2>
         <img class="modalImageOP" src="Assets/OldPortfolio/OldPortfolio_Thumbnail.png" alt="This Portfolio Thumbnail">
@@ -406,7 +405,7 @@
         <img class="modalImageOP" src="Assets/OldPortfolio/Portfolio_PROJECTS_ReadMoreToggled_old.jpeg" alt="My old portfolio projects page with read more toggled">
         <img class="modalImageOP" src="Assets/OldPortfolio/Portfolio_CONTACT_old.png" alt="My old portfolio contact me page">
     </div>
-</div>
+</div> -->
 
 <!------------------GAMES----------------------------->
 <div id="coffeeUtopiaModal" class="modal">
@@ -414,7 +413,7 @@
     <!-- Modal content -->
     <div class="modalContent">
         <h2>CoffeeUtopia</h2>
-        <img class="modalImage" src="Assets/Game/coffeeUtopia_Thumbnail.png" alt="Enemy Animation Thumbnail">
+        <img class="modalImage" src="Assets/Game/coffeeUtopia_Thumbnail.png" alt="Screenshot of Coffee Utopia Game">
         <div>
             <p>
                 I created this 2D game as part of a UI prototyping module in Semester 1 of Year 2 of my degree. Our prompt was to make a game based on the theme of "Utopia" and I felt that my perfect utopia was a nice cozy coffee shop.

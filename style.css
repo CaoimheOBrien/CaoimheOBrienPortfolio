@@ -455,7 +455,7 @@ td{
     gap: 10px;
 }
 
-.modalImage {
+.modalImage, .modalImageEnemy {
     display:none; 
     max-width: 70%;
     max-height: 80vh;
@@ -463,7 +463,7 @@ td{
     align-items: center;
 }
 
-.modalImage.active {
+.modalImage.active, .modalImageEnemy.active {
     display: block;
 }
 
@@ -523,6 +523,7 @@ footer {
         max-width: 900px;
         width: 100%;
     }
+
 }
 
 @media (max-width: 1475px) { /*For contact table*/
@@ -711,10 +712,9 @@ footer {
         height: auto;
     }
 
-    .modalImage {
-        max-width: 80%;
+    .modalImageEnemy{
+        max-width: 500px; 
     }
-
     button.previous,
     button.next {
         font-size: 1.5rem;
@@ -790,6 +790,11 @@ footer {
         font-size: 10px;
     }
 
+    #morningRoutineVideo{
+        width: 100%;
+        max-width: 500px;
+        max-height: 300px;
+    }
 }
 
 @media(max-width: 870px){
@@ -816,6 +821,10 @@ footer {
 
     #profile-pic{
         width: 150px;
+    }
+
+    .modalImageEnemy{
+        max-width: 400px !important;
     }
 }
 
@@ -884,7 +893,7 @@ footer {
 
     /* Sections */
     .section h1 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     /* Project Cards */
@@ -943,6 +952,9 @@ footer {
         font-size: 1.25rem;
     }
 
+    .modalImageEnemy{
+        max-width: 250px !important;
+    }
     /* Contact */
     #contactContainer {
         width: 80%;
@@ -977,6 +989,10 @@ footer {
 }
 
 @media (max-width: 475px) {
+    .section h1 {
+        font-size: 1.25rem;
+    }
+
     #contactContainer h1{
         font-size: 1.25rem;
     }
@@ -1001,6 +1017,17 @@ footer {
     td{
         padding: 0.2px;
     }
+
+    .EnemyImage{
+        width: 100%;
+        max-width: 50px;
+    }
+
+    #liliVideo{
+        width: 100%;
+        max-width: 200px;
+        max-height: 300px;
+    }
 }
 
 @media(max-width: 375px){
@@ -1022,6 +1049,9 @@ footer {
         border-radius: 0%;
     }
 
+    .modalImageEnemy{
+        max-width: 230px !important;
+    }
 }
 
 @media(max-width: 320px){
